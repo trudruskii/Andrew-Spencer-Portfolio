@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
-<!---->
+    <!---->
     <link href="src/styles/index.css" rel="stylesheet">
     <title>Andrew Spencer's Portfolio</title>
 </head>
@@ -35,7 +35,7 @@
         </div>
     </nav>
 </section>
-    <p class="p-1"></p>
+<p class="p-1"></p>
 
 <section class="subHeader">
     <nav class="bg-blue-100 dark:bg-gray-700">
@@ -78,13 +78,51 @@
 </section>
 
 <p class="p-6"></p>
-
-
 <section>
-<div class="border border-black">
-    <h1 class="text-right mx-5 font-bold underline">Portfolio</h1>
+    <!--    utilized GIORGOS SARIGIANNIDIS better tab https://codepen.io/gsarig/pen/ExKJEoM -->
+    <div class="border border-black">
+        <h1 class="text-right mx-5 font-bold underline">Portfolio</h1>
+        <article class="ootb-tabcordion ">
+            <div class="ootb-tabcordion--tabs" role="tablist" aria-label="TabCordion">
+                <button class="tab is-active" role="tab" aria-selected="true" aria-controls="tab1-tab" id="tab1">Education</button>
+                <button class="tab" role="tab" aria-selected="false" aria-controls="tab2-tab" id="tab2" tabindex="-1">Certifications</button>
+                <button class="tab" role="tab" aria-selected="false" aria-controls="tab3-tab" id="tab3" tabindex="-1">Professional Experience</button>
+            </div>
+            <section id="tab1-tab" class="ootb-tabcordion--entry is-active" data-title="Tab 1 with big text" tabindex="0" role="tabpanel" aria-labelledby="tab1">
+                <div class="ootb-tabcordion--entry-container">
+                    <div class="ootb-tabcordion--entry-content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                    </div>
+                </div>
+            </section>
+            <section id="tab2-tab" class="ootb-tabcordion--entry" data-title="Tab 2 with big text" tabindex="-1" role="tabpanel" aria-labelledby="tab2">
+                <div class="ootb-tabcordion--entry-container">
+                    <div class="ootb-tabcordion--entry-content">
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat
+                            mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit,
+                            posuere a, pede. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit,
+                            posuere a, pede. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
+            </section>
+            <section id="tab3-tab" class="ootb-tabcordion--entry" data-title="Tab 3 with big text" tabindex="-1" role="tabpanel" aria-labelledby="tab3">
+                <div class="ootb-tabcordion--entry-container">
+                    <div class="ootb-tabcordion--entry-content">
+                        <p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat
+                            mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit,
+                            posuere a, pede. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat
+                            mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit,
+                            posuere a, pede. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat
+                            mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit,
+                            posuere a, pede.</p>
+                    </div>
+                </div>
+            </section>
+        </article>
+    </div>
+</section>
+<section>
 
-</div>
 </section>
 
 <script type="module" src="/src/main.js"></script>

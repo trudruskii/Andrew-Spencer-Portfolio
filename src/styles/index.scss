@@ -33,3 +33,167 @@ p {
   line-height: 1.6;
 }
 
+p.borderOne {
+  border-bottom: 1px black;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: $padding;
+  background: $background__main;
+  color: $color__tab;
+  font-family: $font__family;
+  font-weight: $font__weight;
+}
+
+p {
+  margin-top: 0;
+  line-height: 1.6;
+}
+
+h2 {
+  margin: 0 auto;
+  text-align: center;
+  font-weight: 300;
+}
+
+.ootb-tabcordion {
+  background: $color__light;
+  box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.2);
+  max-width: $width__max;
+  padding: $padding;
+  margin: $padding auto $padding*4 auto;
+  border-radius: $border__radius;
+  &.has-tabs {
+    .ootb-tabcordion--tabs {
+      opacity: 1;
+      height: auto;
+      visibility: visible;
+    }
+
+    .ootb-tabcordion--entry {
+      min-height: 0;
+
+      &::before {
+        display: none;
+      }
+
+      &.is-active {
+        .ootb-tabcordion--entry-content {
+          opacity: 1;
+          transition: opacity 400ms ease-in-out;
+        }
+      }
+      .ootb-tabcordion--entry-content {
+        opacity: 0;
+        transition: opacity 400ms ease-in-out;
+      }
+    }
+
+
+  }
+}
+
+.ootb-tabcordion--tabs {
+  opacity: 0;
+  height: 0;
+  visibility: hidden;
+  display: flex;
+  flex-flow: wrap;
+  margin: 0;
+  list-style: none;
+  padding: 0;
+
+  .tab {
+    display: block;
+    background: $color__tab;
+    color: #fff;
+    padding: #{$padding/2} $padding;
+    border-radius: $border__radius;
+    font-size: $font__size;
+    font-weight: $font__weight;
+    font-family: $font__family;
+    margin: 0 0 1px 0;
+    border: none;
+    border-right: 1px solid #fff; // Set the disstance with border instead of margin, for more accurate JS calculation of the width
+    cursor: pointer;
+    &:hover,
+    &:focus {
+      background: lighten($color__tab, $lighten__level);
+      outline: none;
+    }
+
+    &.is-active {
+      background: $color__tab-active;
+      &:hover,
+      &:focus {
+        background: darken($color__tab-active, $darken__level);
+      }
+    }
+  }
+}
+
+.ootb-tabcordion--entry {
+  overflow: hidden;
+  &::before {
+    position: relative;
+    content: attr(data-title);
+    cursor: pointer;
+    z-index: 1;
+    background: $color__tab;
+    color: #fff;
+    padding: #{$padding/2} $padding;
+    display: block;
+    border-radius: $border__radius;
+  }
+
+  &:hover,
+  &:focus {
+    outline: none;
+    &::before {
+      background: lighten($color__tab, $lighten__level);
+    }
+  }
+
+  &.is-active {
+    .ootb-tabcordion--entry-content {
+      margin-top: 0;
+      height: auto;
+      opacity: 1;
+      transition: margin 400ms ease-out -100ms;
+    }
+
+    &::before {
+      background: $color__tab-active;
+    }
+    &:hover,
+    &:focus {
+      &::before {
+        background: darken($color__tab-active, $darken__level);
+      }
+    }
+  }
+}
+
+.ootb-tabcordion--entry-container {
+  overflow: hidden;
+  margin-bottom: 1px;
+}
+
+.ootb-tabcordion--entry-content {
+  position: relative;
+  margin-top: -100%;
+  height: 0;
+  opacity: 0;
+  transition: margin 500ms ease-in;
+  padding: $padding;
+  a.more {
+    color: $color__tab;
+    &:hover {
+      color: $color__tab-active;
+    }
+  }
+}
