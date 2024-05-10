@@ -288,3 +288,9 @@ import 'flowbite'
         keyboardSupport(tabContainer, hasTabs(tabContainer));
     }
 })();
+
+
+
+function doSomething() {
+    console.log('I need help with JS.. I need to start some of those practice project tonight')
+};
