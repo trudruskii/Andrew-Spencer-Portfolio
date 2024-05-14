@@ -1,48 +1,24 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-span.nameHere, span.professionHere, h1 {
-  font-size: 2rem;
+
+html {
+  scroll-behavior: revert;
 }
 
-p.aboutmeText {
-  font-size: 0.9rem;
-}
-
-p.borderOne {
-  border-bottom: 1px black;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-body {
-  padding: 1rem;
-  background: #dce2e2;
-  color: #444;
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-}
 
 p {
-  margin-top: 0;
   line-height: 1.6;
 }
 
-h2 {
-  margin: 0 auto;
-  text-align: center;
-  font-weight: 300;
-}
 
 .ootb-tabcordion {
   background: #fff;
   box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.2);
-  max-width: 680px;
-  padding: 1rem;
-  margin: 1rem auto 4rem auto;
-  border-radius: 3px;
+  max-width: 1000px;
+  height: 500px;
+  margin: 1rem auto 0 auto;
+  border-radius: 20px;
 }
 
 .ootb-tabcordion.has-tabs .ootb-tabcordion--tabs {
@@ -82,8 +58,6 @@ h2 {
 
 .ootb-tabcordion--tabs .tab {
   display: block;
-  background: #444;
-  color: #fff;
   padding: 0.5rem 1rem;
   border-radius: 3px;
   font-size: 16px;
@@ -96,16 +70,17 @@ h2 {
 }
 
 .ootb-tabcordion--tabs .tab:hover, .ootb-tabcordion--tabs .tab:focus {
-  background: #535353;
+  background: #B4C6FC;
   outline: none;
 }
 
 .ootb-tabcordion--tabs .tab.is-active {
-  background: #3bacff;
+  background: black;
 }
 
 .ootb-tabcordion--tabs .tab.is-active:hover, .ootb-tabcordion--tabs .tab.is-active:focus {
-  background: #1c9fff;
+  background: black;
+  margin-bottom: 2em;
 }
 
 .ootb-tabcordion--entry {
@@ -140,11 +115,11 @@ h2 {
 }
 
 .ootb-tabcordion--entry.is-active::before {
-  background: #3bacff;
+  background: #5A53E0;
 }
 
 .ootb-tabcordion--entry.is-active:hover::before, .ootb-tabcordion--entry.is-active:focus::before {
-  background: #1c9fff;
+  background: #5A53E0;
 }
 
 .ootb-tabcordion--entry-container {
@@ -166,7 +141,7 @@ h2 {
 }
 
 .ootb-tabcordion--entry-content a.more:hover {
-  color: #3bacff;
+  color: #5A53E0;
 }
 
 /*# sourceMappingURL=index.css.map */
