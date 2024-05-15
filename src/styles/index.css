@@ -23,7 +23,10 @@ p {
   font-family: "Exo 2";
 }
 
-
+.foodThought {
+  font-family: "Annie Use Your Telescope";
+  font-size: 1rem;
+}
 
 .ootb-tabcordion {
   background: darkgray;
@@ -179,6 +182,12 @@ div.mePhoto {
 
 .bahianita-regular {
   font-family: "Bahianita", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.annie-use-your-telescope-regular {
+  font-family: "Annie Use Your Telescope", cursive;
   font-weight: 400;
   font-style: normal;
 }
