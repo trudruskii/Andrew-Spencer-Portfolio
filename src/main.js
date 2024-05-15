@@ -3,6 +3,22 @@ import 'flowbite'
 
 
 
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+            target.scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+    });
+});
+
+
+
+
 
 
 
@@ -266,7 +282,8 @@ import 'flowbite'
         for (const tab of tabs) {
             totalW += tab.offsetWidth;
         }
-        if (totalW >= containerWidth) {
+        // if (totalW >= containerWidth) {
+        if (containerWidth <= 400) {
             container.classList.remove('has-tabs');
         } else {
             container.classList.add('has-tabs');
@@ -289,8 +306,3 @@ import 'flowbite'
     }
 })();
 
-
-
-function doSomething() {
-    console.log('I need help with JS.. I need to start some of those practice project tonight')
-};
