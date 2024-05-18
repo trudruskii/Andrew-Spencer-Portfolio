@@ -24,7 +24,8 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 
 
-//GIORGOS SARIGIANNIDIS function for better tabs//
+//GIORGOS SARIGIANNIDIS's functionality for accordion//
+
 (function () {
     'use strict';
 

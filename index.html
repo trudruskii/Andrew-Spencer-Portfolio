@@ -1,237 +1,188 @@
-<!-- If you are checking out my amazing site =) and are inspecting this code please know that ALL TIME LOW is, has been and always be an AMAZING band -->
 <!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!---->
     <link href="src/styles/index.css" rel="stylesheet">
-
-
+    <script src="https://unpkg.com/split-type"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Bahianita&family=Exo+2&family=Gluten:slnt,wght@-4,100..900&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Bahianita&family=Exo+2&family=Gluten:slnt,wght@-4,100..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
     <title>Andrew Spencer's Portfolio</title>
 </head>
 <body>
-
-<section id="Home">
-    <div class="p-1 absolute md:block w-16 left-0 top-0 ml-60 ">
-        <img src="public/images/logo-Placeholder.png" alt="Logo Place Holder"/>
+    <div id="Up" class="flex justify-center relative myName">
+        <span class=
+                      "border-t-4 border-t-teal-700  z-10 md:absolute md:left-81 md:top-20 text-5xl font-black animate-text bg-gradient-to-r from-teal-400 via-gray-500 to-teal-400 bg-clip-text text-transparent nameHere"
+        >Andrew Spencer</span>
     </div>
-    <nav class="bg-black text-xs">
-        <div class=" max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-            <div class="mx-auto md:hidden">
-                <button data-collapse-toggle="navbar-default" type="button" class="inline-flex p-2 w-10 h-10  text-sm text-white focus:text-black rounded-lg md:hidden hover:bg-green-700 focus:ring-2 focus:ring-gray-200" aria-controls="navbar-default" aria-expanded="false">
-                    <span class="sr-only">Open main menu</span>
-                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
-                    </svg>
-                </button>
-            </div>
-
-            <div class="fixed-center hidden w-full md:block md:w-auto mx-auto" id="navbar-default">
-                <ul class="navTags text-lg flex flex-col p-4 md:p-0 mt-4 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 ">
-                    <li>
-                        <a href="#Portfolio" class="text-green-400 hover:text-green-500 hover:text-2xl hover:bg-white hover:rounded-full hover:p-2">Portfolio</a>
-                    </li>
-                    <li>
-                        <a href="#Home" class="text-green-400 border-t border-t-white hover:text-green-500 hover:text-2xl hover:bg-white hover:rounded-full hover:p-2" aria-current="page">Home</a>
-                    </li>
-                    <li>
-                        <a href="#About-Contact" class="text-green-400 hover:text-green-500 hover:text-2xl hover:bg-white hover:rounded-full hover:p-2">About-Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="flex justify-center absolute right-0 mr-12">
-            <span class="border-t-2 border-t-green-800  mt-4 text-2xl text-black font-bold nameHere ">Andrew Spencer</span>
-        </div>
-    </nav>
-</section>
-
-<!--Contact -&#45;&#45; Phone & Email w/ Icons-->
-<div class="contactQuick hover:animate-pulse absolute right-0 top-0">
-    <div class="flex gap-2 justify-center lg:justify-start">
-        <svg class="w-[20px] h-[20px] text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M18.427 14.768 17.2 13.542a1.733 1.733 0 0 0-2.45 0l-.613.613a1.732 1.732 0 0 1-2.45 0l-1.838-1.84a1.735 1.735 0 0 1 0-2.452l.612-.613a1.735 1.735 0 0 0 0-2.452L9.237 5.572a1.6 1.6 0 0 0-2.45 0c-3.223 3.2-1.702 6.896 1.519 10.117 3.22 3.221 6.914 4.745 10.12 1.535a1.601 1.601 0 0 0 0-2.456Z"/>
-        </svg>
-        <a href="tel:505-785-5646" class="text-green-200 font-bold text-sm lg:block md:block sm:hidden xs:hidden md:mr-24">505-785-5646</a>
-    </div>
-    <div class="flex gap-2 justify-center lg:justify-start">
-        <svg class="w-[20px] h-[20px] text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" d="M7 9h5m3 0h2M7 12h2m3 0h5M5 5h14a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1h-6.616a1 1 0 0 0-.67.257l-2.88 2.592A.5.5 0 0 1 8 18.477V17a1 1 0 0 0-1-1H5a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1Z"/>
-        </svg>
-        <a href="mailto:andrewspencer90@proton.me" class="text-sm text-green-600 hover:animate-pulse lg:block md:block sm:hidden xs:hidden">andrewspencer90@proton.me</a>
-    </div>
-</div>
-
-
-    <p class="p-10"></p>
-
-<section id="Portfolio">
-
-        <!--    utilized GIORGOS SARIGIANNIDIS better tab https://codepen.io/gsarig/pen/ExKJEoM -->
-        <div class="flex-container relative bg-white border border-black">
-
-            <article class="ootb-tabcordion
-            float-left p-4 container">
-                <div class="ootb-tabcordion--tabs
-                 gap-1" role="tablist" aria-label="TabCordion">
-                    <button class="tab is-active bg-green-700 text-white mb-2 text-lg" role="tab" aria-selected="true" aria-controls="tab1-tab" id="tab1">Education</button>
-                    <button class="tab bg-green-700 text-white text-lg" role="tab" aria-selected="false" aria-controls="tab2-tab" id="tab2" tabindex="-1">Certifications</button>
-                    <button class="tab bg-green-700 text-white text-lg" role="tab" aria-selected="false" aria-controls="tab3-tab" id="tab3" tabindex="-1">Resume</button>
-                </div>
-                <div class="portfolioStart  p-10 mb-8 relative mr-10 pr-20">
-                    <span class="portFolioTitle font-bold border-t-2 hover:text-green-700 focus:text-green-700 absolute right-0 top-0 text-4xl order-last md:mx-auto">myPortfolio</span>
-                </div>
-
-                <section id="tab1-tab" class="ootb-tabcordion--entry is-active"
-                         data-title="Education" tabindex="0" role="tabpanel" aria-labelledby="tab1">
-                    <div class="ootb-tabcordion--entry-container">
-                        <div class="ootb-tabcordion--entry-content">
-                            <ul class="list-disc ml-4 text-white tabStuff">
-                                <li>4.0 GPA Beville State Community College </li>
-                                <li>CNM Ingenuity</li>
-                                <li>Enrolled at CNM to finish associates in CS</li>
-                            </ul>
-                        </div>
-
-                    </div>
-                </section>
-
-                <section id="tab2-tab" class="ootb-tabcordion--entry" data-title="Certifications" tabindex="-1" role="tabpanel" aria-labelledby="tab2">
-
-                    <div class="ootb-tabcordion--entry-container">
-                        <div class="ootb-tabcordion--entry-content text-white">
-                            <ul class="list-disc ml-4 text-white tabStuff">
-                                <li>Full Stack Web Development</li>
-                                <li>Phlebotomy Certification  (no longer current)</li>
-                            </ul>
-                        </div>
-
-                    </div>
-                </section>
-
-                <section id="tab3-tab" class="ootb-tabcordion--entry" data-title="Resume" tabindex="-1" role="tabpanel" aria-labelledby="tab3">
-
-                    <div class="ootb-tabcordion--entry-container">
-                        <div class="ootb-tabcordion--entry-content tab">
-                            <ul class="text-white ml-4 tabStuff">
-                                <p>ANDREW SPENCER
-                                    Albuquerque, NM
-                                    Phone: (505) 785-5646
-                                    Email: andrewspencer1990@proton.me
-                                    Objective
-                                    To acquire fruitful and stable employment at a reputable company that offers opportunities for growth and learning.
-                                    Ability Summary
-                                    •	Leadership skills
-                                    •	Ability to train new hires on all systems and processes
-                                    •	Capacity to multitask
-                                    •	Proficient in Microsoft Suite, 365 programs, Microsoft Office and Google Suite
-                                    •	Excellent Customer Service Skills
-                                    •	Communicate well across all levels of employment
-                                    •	Proficient with computers, phlebotomy, medical terminology, and CSR terminology.
-                                    •	Self-motivated and dedicated individual
-                                    Employment History
-                                    11/2020 - 03/2021	Customer Service Representative
-                                    S&P Data LLC, Rio Rancho, NM
-                                    Answer inbound calls from an extremely a high call volume queue. Handled high call volumes as a technical support specialist, billing specialist and call triaging. Assisted customers in troubleshooting their equipment associated with their home security system. Remote support for devices such as; cameras, door & window sensors, security door chime box, Alexa, Wifi extenders, Tp Link, Powerline Adapters, Zwave devices and even the Security system panels as well would be provided to customers daily. I also regularly would provide troubleshooting assistance for customers to regain online portal access, reconnecting their equipment to their home network and helping customer access their accounts. Where online access was not applicable for the customer, I'd help customers get their payments processed and review their billing history with them.
-
-                                    11/2020 - 03/2021	Customer Service Representative Supervisor
-                                    S&P Data LLC, Rio Rancho, NM
-                                    Manage a team of 35-40 customer service agents. Hosted daily morning huddles to recap previous day overview of calls to highlight agents individual/team stats and their performance.
-                                    Maintain logs of the daily, weekly and Month To Date stats for each agent. Set KPI goals for team to meet by day, weekly and each month.
-                                    Conduct daily call quality assurance by live listening to agent calls, listen to completed/recorded calls with agents and provide coachings when improvement needed.
-                                    Provided team chat support, directing agents to appropriate troubleshooting tools.
-                                    Handle calls with hostile/upset customers that needed deescalating
-
-                                    09/2012 - 12/2019	Examiner
-                                    Hooper Holmes, Olathe, KS
-                                    Responsible for maintaining home office. Contracts phlebotomy skills for health screenings, maintains personal work schedule, processes shipping and receiving of supplies, processing of confidential documents, connects with colleagues via phone, works directly with other examiners to ensure wellness events are organized and that everyone has the supplies they need to do their job sufficiently. Work several events as the supervisor over the site. Oversee the entire event from setup to shut down which includes investigating site for adequate space, lighting, bathrooms, seating and temperature to ensure site would meet all requirements for wellness screenings to be performed optimally. Responsible for overseeing other employees working events which includes disciplinary action, time sheets and performance.
-
-                                    10/2016 - 02/2017	Donation Specialists
-                                    United Blood Services, Tupelo, MS
-                                    Contact information: 877-464-4376
-                                    Supervisor: Lino Chue
-                                    Gained experience in a donation center, getting to work on a mobile blood unit. Obtained my Class D commercial driver's license door purpose of operating donation bus.
-
-                                    02/2016 - 04/2016	Custodian
-                                    Jan Pro, Beaufort, SC
-                                    Performed regular cleaning at a monasarry school every weeknight. Cleaning duties included sweeping, mopping and vacuuming. Scrubbed, sanitized, emptied trash and restocked all facility bathrooms.
-
-                                    04/2013 - 04/2016	Patient Service Technician (PST)
-                                    Lab Corp, Winfield, AL
-                                    Contact information: 205-572-0417
-                                    Supervisor: Shanita Townes
-                                    Worked in both patient service centers and Dr. Offices as a Patient Service Technician. Clinical setting where patients would receive phlebotomy services and other basic lab procedures. Processed doctor orders into computer system for testing and billing purposes. Handled receiving and shipping of biohazardous specimens. Maintained inventory, rotating supplies, ordering and stocking supplies for the lab.
-
-                                    03/2011 - 03/2013	Lab Assistance
-                                    Baptist Memorial Hospital, Oxford, MS
-                                    Contact information: 662-232-8428
-                                    Supervisor: Jeremy Nichols
-                                    Worked as a lab assistant/phlebotomist assisting the lab technicians by collecting blood/urine samples from both in house and out bound patients. Received and processed all bio hazardous samples into the lab into internal computer system, prepared them then distributed them to appropriate departments. Responsible for out patient services in office setting and handling all in bound calls to the lab.
-
-                                    06/2008 - 08/2008	Intern
-                                    Hirel Connectors, Claremont, CA
-                                    Contact Number: 909-626-1820
-                                    Supervisor: Lanette Salas
-                                    Internship where I got to work directly with each vital department within the factory
-                                    Data Entry: converted paper documents, ranging from inventory logs to purchase and sale receipts to electronic storage. Utilized copy/fax machine.
-                                    Shipping and receiving: helped unload delivers, sort/distribute packages and prepare packages for shipment.
-                                    Technical Support: Learned the basics on how the IT department handles troubleshooting basic technical difficulties, hardware maintenance and systems updates.
-
-                                    Education History
-                                    Computer Science
-                                    1 Year of College or a Technical or Vocational School
-                                    Beville State Community College, Hamilton, AL
-
-
-                                    General Studies
-                                    High School Diploma
-                                    Mooreville High School, Mooreville, MS
-
-
-                                    CNM Ingenuity
-                                    Full Stack Web Development Certification
-                                    Albuquerque, New Mexico
-                                </p>
-                            </ul>
-                        </div>
-                    </div>
-                </section>
-                <div class="container grid grid-cols-3 mt-20 text-green-700 font-bold animate-pulse">
-                    <p>Start working on small projects</p>
-                    <p>and put either code snippits</p>
-                    <h1>or some other way of displaying.</h1>
-                </div>
-            </article>
-        </div>
-    </div>
-</section>
-
 
     <p class="p-8"></p>
 
-<section id="About-Contact">
-
-    <div class="container my-24 mx-auto md:px-6 bg-gradient-to-b from-green-700 to-black rounded-lg">
+    <div class= "relative flex-container my-24 mx-10 md:px-6 border-4 border-gray-200 bg-gradient-to-b from-gray-600 to-black rounded-lg">
+        <h4 class="border-t text- absolute md:right-28 top-0 mr-10 font-bold text-4xl mt-10  md:mx-auto contactArea">Lets work together</h4>
 
         <div class="portfolioStart p-10 relative mr-10">
-            <span class="border-t text-black absolute right-0 top-0 font-bold text-4xl mt-10 order-last md:mx-auto contactArea">Lets work together</span>
+
         </div>
-        <!-- Section: Design Block -->
-        <section class="mb-32">
-            <div class="flex flex-wrap justify-center">
+
+            <div class="flex flex-wrap justify-center mb-32">
                 <div class="mt-10 w-full shrink-0 grow-0 basis-auto md:mb-0 md:w-6/12 sm:w-3/6 md:px-3 lg:px-6 mePhoto">
                     <img src="public/images/imagePlaceHolder.jpg" alt="Andrew Spencer" class="h-2/3 w-2/3 transform rotate-6 rounded-xl shadow-lg     mx-auto"/>
                     <p class="foodThought text-white text-center md:text-left sm:text-left mt-10 ">
                         I am finishing up getting an associates in computer science and am looking for any type of work where I can continue learning and expanding my knowledge base in the tech world. I'd love the opportunity to work on a project for you or jump right into an internship.
                     </p>
                 </div>
-                <div class="w-full md:w-96 md:max-w-full mx-auto mt-10">
+
+                <div class="md:absolute left-0 -top-40 static">
+                    <div class="ootb-tabcordion p-4 container">
+                        <div class="ootb-tabcordion--tabs gap-1" role="tablist" aria-label="TabCordion">
+                            <button class=
+                                            "tab is-active bg-black text-white mb-2 text-lg content-center" role="tab" aria-selected="true" aria-controls="tab1-tab" id="tab1"
+                            >Education</button>
+                            <button class=
+                                            "tab text-white bg-black text-center content-center text-lg" role="tab" aria-selected="false" aria-controls="tab2-tab" id="tab2" tabindex="-1"
+                            >Certifications</button>
+                            <button class=
+                                            "tab text-white bg-black text-center content-center text-lg" role="tab" aria-selected="false" aria-controls="tab3-tab" id="tab3" tabindex="-1"
+                            >Resume</button>
+                        </div>
+
+                        <div class="portfolioStart  p-10 mb-8 relative mr-10 pr-20">
+                    <span class=
+                                  "portFolioTitle font-bold border-t-2 text-teal-400 absolute right-0 top-0 text-4xl order-last md:mx-auto"
+                    >myPortfolio</span>
+                        </div>
+
+                        <section id="tab1-tab" class="ootb-tabcordion--entry is-active" data-title="Education" tabindex="0" role="tabpanel" aria-labelledby="tab1">
+                            <div class="ootb-tabcordion--entry-container">
+                                <div class="ootb-tabcordion--entry-content">
+                                    <ul class="list-disc ml-4 text-black tabStuff">
+                                        <li>4.0 GPA Beville State Community College </li>
+                                        <li>CNM Ingenuity</li>
+                                        <li>Enrolled at CNM to finish associates in CS</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section id="tab2-tab" class="ootb-tabcordion--entry" data-title="Certifications" tabindex="-1" role="tabpanel" aria-labelledby="tab2">
+                            <div class="ootb-tabcordion--entry-container">
+                                <div class="ootb-tabcordion--entry-content text-white">
+                                    <ul class="list-disc ml-4 text-black tabStuff">
+                                        <li>Full Stack Web Development</li>
+                                        <li>Phlebotomy Certification  (no longer current)</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section id="tab3-tab" class="ootb-tabcordion--entry" data-title="Resume" tabindex="-1" role="tabpanel" aria-labelledby="tab3">
+
+                            <div class="ootb-tabcordion--entry-container">
+                                <div class="ootb-tabcordion--entry-content tab">
+                                    <ul class="text-black ml-4 tabStuff">
+                                        <h1 class="font-bold text-2xl font-black animate-text bg-gradient-to-r from-teal-400 via-gray-500 to-teal-400 bg-clip-text text-transparent text-center">Andrew Spencer</h1>
+                                        <p class="leading-tight text-left font-black ">myObjective:</p>
+                                        <p class="leading-tight text-center"> To acquire fruitful and stable employment at a reputable company that offers opportunities for growth and learning.</p>
+                                        <h3 class="text-left font-bold">myStack:</h3>
+                                        <h3 class="text-center font-semibold pt-4">Frontend</h3>
+                                        <ul class="grid grid-cols-4 space-x-1 gap-4 content-left justify-left items-left place-items-left text-left list-disc">
+                                            <li>TailwindCSS</li>
+                                            <li>Javascript</li>
+                                            <li>React</li>
+                                            <li>CSS</li>
+                                            <li>PostgreSQL</li>
+                                            <li>Git</li>
+                                            <li></li>
+                                        </ul>
+
+
+                                        <p>
+                                            Ability Summary
+                                            •	Leadership skills
+                                            •	Ability to train new hires on all systems and processes
+                                            •	Capacity to multitask
+                                            •	Proficient in Microsoft Suite, 365 programs, Microsoft Office and Google Suite
+                                            •	Excellent Customer Service Skills
+                                            •	Communicate well across all levels of employment
+                                            •	Proficient with computers, phlebotomy, medical terminology, and CSR terminology.
+                                            •	Self-motivated and dedicated individual
+
+                                            Employment History
+                                            11/2020 - 03/2021	Customer Service Representative
+                                            S&P Data LLC, Rio Rancho, NM
+                                          High call volumes billing specialist and call triaging. Remote support for various electronic devices. I also regularly would provide troubleshooting assistance for customers to regain online portal access, reconnecting their equipment to their home network and helping customer access their accounts. Where online access was not applicable for the customer, I'd help customers get their payments processed and review their billing history with them.
+
+                                            11/2020 - 03/2021	Customer Service Representative Supervisor
+                                            S&P Data LLC, Rio Rancho, NM
+                                            Manage a team of 35-40 customer service agents. Hosted daily morning huddles to recap previous day overview of calls to highlight agents individual/team stats and their performance.
+                                            Maintain logs of the daily, weekly and Month To Date stats for each agent. Set KPI goals for team to meet by day, weekly and each month.
+                                            Conduct daily call quality assurance by live listening to agent calls, listen to completed/recorded calls with agents and provide coachings when improvement needed.
+                                            Provided team chat support, directing agents to appropriate troubleshooting tools.
+                                            Handle calls with hostile/upset customers that needed deescalating
+
+                                            09/2012 - 12/2019	Examiner
+                                            Hooper Holmes, Olathe, KS
+                                            Responsible for maintaining home office. Contracts phlebotomy skills for health screenings, maintains personal work schedule, processes shipping and receiving of supplies, processing of confidential documents, connects with colleagues via phone, works directly with other examiners to ensure wellness events are organized and that everyone has the supplies they need to do their job sufficiently. Work several events as the supervisor over the site. Oversee the entire event from setup to shut down which includes investigating site for adequate space, lighting, bathrooms, seating and temperature to ensure site would meet all requirements for wellness screenings to be performed optimally. Responsible for overseeing other employees working events which includes disciplinary action, time sheets and performance.
+
+                                            10/2016 - 02/2017	Donation Specialists
+                                            United Blood Services, Tupelo, MS
+                                            Contact information: 877-464-4376
+                                            Supervisor: Lino Chue
+                                            Gained experience in a donation center, getting to work on a mobile blood unit. Obtained my Class D commercial driver's license door purpose of operating donation bus.
+
+                                            02/2016 - 04/2016	Custodian
+                                            Jan Pro, Beaufort, SC
+                                            Performed regular cleaning at a monasarry school every weeknight. Cleaning duties included sweeping, mopping and vacuuming. Scrubbed, sanitized, emptied trash and restocked all facility bathrooms.
+
+                                            04/2013 - 04/2016	Patient Service Technician (PST)
+                                            Lab Corp, Winfield, AL
+                                            Contact information: 205-572-0417
+                                            Supervisor: Shanita Townes
+                                            Worked in both patient service centers and Dr. Offices as a Patient Service Technician. Clinical setting where patients would receive phlebotomy services and other basic lab procedures. Processed doctor orders into computer system for testing and billing purposes. Handled receiving and shipping of biohazardous specimens. Maintained inventory, rotating supplies, ordering and stocking supplies for the lab.
+
+                                            03/2011 - 03/2013	Lab Assistance
+                                            Baptist Memorial Hospital, Oxford, MS
+                                            Contact information: 662-232-8428
+                                            Supervisor: Jeremy Nichols
+                                            Worked as a lab assistant/phlebotomist assisting the lab technicians by collecting blood/urine samples from both in house and out bound patients. Received and processed all bio hazardous samples into the lab into internal computer system, prepared them then distributed them to appropriate departments. Responsible for out patient services in office setting and handling all in bound calls to the lab.
+
+                                            06/2008 - 08/2008	Intern
+                                            Hirel Connectors, Claremont, CA
+                                            Contact Number: 909-626-1820
+                                            Supervisor: Lanette Salas
+                                            Internship where I got to work directly with each vital department within the factory
+                                            Data Entry: converted paper documents, ranging from inventory logs to purchase and sale receipts to electronic storage. Utilized copy/fax machine.
+                                            Shipping and receiving: helped unload delivers, sort/distribute packages and prepare packages for shipment.
+                                            Technical Support: Learned the basics on how the IT department handles troubleshooting basic technical difficulties, hardware maintenance and systems updates.
+
+                                            Education History
+                                            Computer Science
+                                            1 Year of College or a Technical or Vocational School
+                                            Beville State Community College, Hamilton, AL
+
+
+                                            General Studies
+                                            High School Diploma
+                                            Mooreville High School, Mooreville, MS
+
+
+                                            CNM Ingenuity
+                                            Full Stack Web Development Certification
+                                            Albuquerque, New Mexico
+                                        </p>
+                                    </ul>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+
+                <div class="w-full md:w-96 md:max-w-full static md:absolute right-20 top-20 mx-auto mt-10">
                     <div class="p-6 sm:rounded-md">
                         <form method="POST" action="subscriberform.php">
                             <label class="block mb-6">
@@ -315,37 +266,44 @@
                         </form>
                     </div>
                 </div>
+            <div class="flex flex-container justify-center gap-2">
+                <a href="https://discordapp.com/users/1212277399555805206" aria-label="Discord">
+                    <svg class="discord" xmlns="http://www.w3.org/2000/svg" height="32" width="40" viewBox="0 0 640 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ffffff" d="M524.5 69.8a1.5 1.5 0 0 0 -.8-.7A485.1 485.1 0 0 0 404.1 32a1.8 1.8 0 0 0 -1.9 .9 337.5 337.5 0 0 0 -14.9 30.6 447.8 447.8 0 0 0 -134.4 0 309.5 309.5 0 0 0 -15.1-30.6 1.9 1.9 0 0 0 -1.9-.9A483.7 483.7 0 0 0 116.1 69.1a1.7 1.7 0 0 0 -.8 .7C39.1 183.7 18.2 294.7 28.4 404.4a2 2 0 0 0 .8 1.4A487.7 487.7 0 0 0 176 479.9a1.9 1.9 0 0 0 2.1-.7A348.2 348.2 0 0 0 208.1 430.4a1.9 1.9 0 0 0 -1-2.6 321.2 321.2 0 0 1 -45.9-21.9 1.9 1.9 0 0 1 -.2-3.1c3.1-2.3 6.2-4.7 9.1-7.1a1.8 1.8 0 0 1 1.9-.3c96.2 43.9 200.4 43.9 295.5 0a1.8 1.8 0 0 1 1.9 .2c2.9 2.4 6 4.9 9.1 7.2a1.9 1.9 0 0 1 -.2 3.1 301.4 301.4 0 0 1 -45.9 21.8 1.9 1.9 0 0 0 -1 2.6 391.1 391.1 0 0 0 30 48.8 1.9 1.9 0 0 0 2.1 .7A486 486 0 0 0 610.7 405.7a1.9 1.9 0 0 0 .8-1.4C623.7 277.6 590.9 167.5 524.5 69.8zM222.5 337.6c-29 0-52.8-26.6-52.8-59.2S193.1 219.1 222.5 219.1c29.7 0 53.3 26.8 52.8 59.2C275.3 311 251.9 337.6 222.5 337.6zm195.4 0c-29 0-52.8-26.6-52.8-59.2S388.4 219.1 417.9 219.1c29.7 0 53.3 26.8 52.8 59.2C470.7 311 447.5 337.6 417.9 337.6z"/></svg>
+                </a>
+                <a href="https://www.facebook.com/trudrewski/" aria-label="Facebook">
+                    <svg class="faceBook bg-white rounded-full" xmlns="http://www.w3.org/2000/svg" height="32" width="32" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#0866ff" d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"/></svg>
+                </a>
+                <a href="https://www.linkedin.com/in/andrew-spencer-/" aria-label="Linkedin">
+                    <svg class="linkedIn bg-white rounded-2xl" xmlns="http://www.w3.org/2000/svg" height="32" width="28" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#0463c4" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+                </a>
+                <a href="https://github.com/trudruskii" aria-label="Github">
+                    <svg class="gitHub" xmlns="http://www.w3.org/2000/svg" height="32" width="31" viewBox="0 0 496 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ffffff" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+                </a>
             </div>
-        </section>
     </div>
-</section>
-
-<footer class="bg-black">
-    <div>
-        <h5><a href="#Home" class="flex justify-center text-green-400 mb-4" aria-current="page">Home</a></h5>
-    </div>
-    <div class="flex flex-container justify-center gap-2">
-        <a href="https://discordapp.com/users/1212277399555805206" aria-label="Discord">
-            <svg class="discord" xmlns="http://www.w3.org/2000/svg" height="32" width="40" viewBox="0 0 640 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ffffff" d="M524.5 69.8a1.5 1.5 0 0 0 -.8-.7A485.1 485.1 0 0 0 404.1 32a1.8 1.8 0 0 0 -1.9 .9 337.5 337.5 0 0 0 -14.9 30.6 447.8 447.8 0 0 0 -134.4 0 309.5 309.5 0 0 0 -15.1-30.6 1.9 1.9 0 0 0 -1.9-.9A483.7 483.7 0 0 0 116.1 69.1a1.7 1.7 0 0 0 -.8 .7C39.1 183.7 18.2 294.7 28.4 404.4a2 2 0 0 0 .8 1.4A487.7 487.7 0 0 0 176 479.9a1.9 1.9 0 0 0 2.1-.7A348.2 348.2 0 0 0 208.1 430.4a1.9 1.9 0 0 0 -1-2.6 321.2 321.2 0 0 1 -45.9-21.9 1.9 1.9 0 0 1 -.2-3.1c3.1-2.3 6.2-4.7 9.1-7.1a1.8 1.8 0 0 1 1.9-.3c96.2 43.9 200.4 43.9 295.5 0a1.8 1.8 0 0 1 1.9 .2c2.9 2.4 6 4.9 9.1 7.2a1.9 1.9 0 0 1 -.2 3.1 301.4 301.4 0 0 1 -45.9 21.8 1.9 1.9 0 0 0 -1 2.6 391.1 391.1 0 0 0 30 48.8 1.9 1.9 0 0 0 2.1 .7A486 486 0 0 0 610.7 405.7a1.9 1.9 0 0 0 .8-1.4C623.7 277.6 590.9 167.5 524.5 69.8zM222.5 337.6c-29 0-52.8-26.6-52.8-59.2S193.1 219.1 222.5 219.1c29.7 0 53.3 26.8 52.8 59.2C275.3 311 251.9 337.6 222.5 337.6zm195.4 0c-29 0-52.8-26.6-52.8-59.2S388.4 219.1 417.9 219.1c29.7 0 53.3 26.8 52.8 59.2C470.7 311 447.5 337.6 417.9 337.6z"/></svg>
-        </a>
-        <a href="https://www.facebook.com/trudrewski/" aria-label="Facebook">
-            <svg class="faceBook bg-white rounded-full" xmlns="http://www.w3.org/2000/svg" height="32" width="32" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#0866ff" d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"/></svg>
-        </a>
-        <a href="https://www.linkedin.com/in/andrew-spencer-/" aria-label="Linkedin">
-            <svg class="linkedIn bg-white rounded-2xl" xmlns="http://www.w3.org/2000/svg" height="32" width="28" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#0463c4" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
-        </a>
-        <a href="https://github.com/trudruskii" aria-label="Github">
-            <svg class="gitHub" xmlns="http://www.w3.org/2000/svg" height="32" width="31" viewBox="0 0 496 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ffffff" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
-        </a>
 
 
 
-
-    </div>
-</footer>
 
 
 
 <script type="module" src="/src/main.js"></script>
 </body>
 </html>
+
+
+
+<!--<div class="contactQuick hover:animate-pulse">-->
+<!--    <div class="flex gap-2 justify-end items-end">-->
+<!--        <svg class="w-[20px] h-[20px] text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">-->
+<!--            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M18.427 14.768 17.2 13.542a1.733 1.733 0 0 0-2.45 0l-.613.613a1.732 1.732 0 0 1-2.45 0l-1.838-1.84a1.735 1.735 0 0 1 0-2.452l.612-.613a1.735 1.735 0 0 0 0-2.452L9.237 5.572a1.6 1.6 0 0 0-2.45 0c-3.223 3.2-1.702 6.896 1.519 10.117 3.22 3.221 6.914 4.745 10.12 1.535a1.601 1.601 0 0 0 0-2.456Z"/>-->
+<!--        </svg>-->
+<!--        <a href="tel:505-785-5646" class="text-green-100 font-bold text-sm hover:text-2xl lg:block md:block sm:hidden xs:hidden md:mr-24">505-785-5646</a>-->
+<!--    </div>-->
+<!--    <div class="flex gap-2 justify-end items-end">-->
+<!--        <svg class="w-[20px] h-[20px] text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">-->
+<!--            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" d="M7 9h5m3 0h2M7 12h2m3 0h5M5 5h14a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1h-6.616a1 1 0 0 0-.67.257l-2.88 2.592A.5.5 0 0 1 8 18.477V17a1 1 0 0 0-1-1H5a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1Z"/>-->
+<!--        </svg>-->
+<!--        <a href="mailto:andrewspencer90@proton.me" class="text-sm text-green-100 hover:text-2xl hover:animate-pulse hover:bg-white hover:text-green-800 lg:block md:block sm:hidden xs:hidden">andrewspencer90@proton.me</a>-->
+<!--    </div>-->
+<!--</div>-->

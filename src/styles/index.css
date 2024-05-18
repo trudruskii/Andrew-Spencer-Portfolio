@@ -2,40 +2,38 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
+@media (max-width: 768px) {
+  #Up {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  .nameHere {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
 html {
   scroll-behavior: smooth;
 }
 
 
-p {
-  line-height: 1.6;
-}
+/*come back here*/
+/*oobt-tabcordion*/
 
-.nameHere {
-  font-family: 'Bahianita';
-}
 
-.navTags {
-  font-family: 'Gluten';
-}
-
-.tabStuff .contactArea {
-  font-family: "Exo 2";
-}
-
-.foodThought {
-  font-family: "Annie Use Your Telescope";
-  font-size: 1rem;
-}
 
 .ootb-tabcordion {
-  background: darkgray;
-  box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.2);
+  background: lightgray;
+  box-shadow: 1px 3px 2px rgba(0, 0, 0, 0.2);
   max-width: 500px;
   height: auto;
-  margin: 1rem auto 0 auto;
+  margin: 5rem auto 5rem auto;
   border-radius: 20px;
-  font-family: "Exo 2" ;
+  font-family: "Space Grotesk" ;
 }
 
 .ootb-tabcordion.has-tabs .ootb-tabcordion--tabs {
@@ -48,23 +46,13 @@ p {
   min-height: 0;
 }
 
-.ootb-tabcordion.has-tabs .ootb-tabcordion--entry::before {
-  display: none;
-}
 
-.ootb-tabcordion.has-tabs .ootb-tabcordion--entry.is-active .ootb-tabcordion--entry-content {
-  opacity: 1;
-  transition: opacity 400ms ease-in-out;
-}
 
-.ootb-tabcordion.has-tabs .ootb-tabcordion--entry .ootb-tabcordion--entry-content {
-  opacity: 0;
-  transition: opacity 400ms ease-in-out;
-}
+
 
 .ootb-tabcordion--tabs {
   opacity: 0;
-  height: 20;
+  height: auto;
   visibility: hidden;
   display: flex;
   flex-flow: wrap;
@@ -73,21 +61,15 @@ p {
 
 .ootb-tabcordion--tabs .tab {
   border-radius: 10px;
-  border-right: 1px solid white;
+  border-right: 2px solid white;
   border-bottom: .5px solid white;
   cursor: pointer;
 }
 
-.ootb-tabcordion--tabs .tab:hover, .ootb-tabcordion--tabs .tab:focus {
-  background: #31C48D;
-  outline: black;
-}
 
-/*.ootb-tabcordion--tabs .tab.is-active {*/
-/*}*/
 
 .ootb-tabcordion--tabs .tab.is-active:hover, .ootb-tabcordion--tabs .tab.is-active:focus {
-  background: black;
+  background: #00CED1;
   margin-bottom: 2em;
   padding:20px;
 }
@@ -101,39 +83,29 @@ p {
   content: attr(data-title);
   cursor: pointer;
   z-index: 1;
-  background: #444;
-  color: #fff;
+  background: black;
+  color: white;
   padding: 0.5rem 2rem;
   display: block;
   border-radius: 20px;
 }
 
-.ootb-tabcordion--entry:hover, .ootb-tabcordion--entry:focus {
-  outline: none;
-}
 
-.ootb-tabcordion--entry:hover::before, .ootb-tabcordion--entry:focus::before {
-  background: #535353;
-}
+
+
 
 .ootb-tabcordion--entry.is-active .ootb-tabcordion--entry-content {
-  margin-top: 0;
-  height: auto;
+  margin-top: 1em;
+  height: 180px;
+  max-height: auto;
   opacity: 1;
   transition: margin 400ms ease-out -100ms;
+  border: solid darkgray;
+  overflow: auto;
+
 }
 
-.ootb-tabcordion--entry.is-active::before {
-  background: #034D38;
-}
 
-.ootb-tabcordion--entry.is-active:hover::before, .ootb-tabcordion--entry.is-active:focus::before {
-  background: #31C48D;
-}
-
-.ootb-tabcordion--entry-container {
-  overflow: hidden;
-}
 
 .ootb-tabcordion--entry-content {
   position: relative;
@@ -143,51 +115,79 @@ p {
   transition: margin 500ms ease-in;
   padding: 1rem;
 }
+/*setting colors*/
 
-.ootb-tabcordion--entry-content a.more {
-  color: #444;
+
+
+.ootb-tabcordion--entry.is-active:hover::before, .ootb-tabcordion--entry.is-active:focus::before {
+  background:  #00CED1;
 }
 
-.ootb-tabcordion--entry-content a.more:hover {
-  color: #034D38;
+h4, myName {
+  color: #00CED1;
 }
 
-/*# sourceMappingURL=index.css.map */
-
-
-div.mePhoto {
-  font-family: "Sedgwick Ave";
-}
-.exo2-<
-
-.exo-2-<uniquifier> {
-          font-family: "Exo 2", sans-serif;
-          font-optical-sizing: auto;
-          font-weight: 400;
-          font-style: normal;
-        };
-
-
-
-
-
-.gluten-<uniquifier> {
-           font-family: "Gluten", cursive;
-           font-optical-sizing: auto;
-           font-weight: <weight>;
-           font-style: normal;
-           font-variation-settings:
-                   "slnt" 0;
-         }
-
-.bahianita-regular {
-  font-family: "Bahianita", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+.ootb-tabcordion--entry.is-active::before {
 }
 
-.annie-use-your-telescope-regular {
-  font-family: "Annie Use Your Telescope", cursive;
-  font-weight: 400;
-  font-style: normal;
+.ootb-tabcordion--entry:hover::before, .ootb-tabcordion--entry:focus::before {
 }
+
+.ootb-tabcordion--tabs .tab.is-active {
+}
+
+.ootb-tabcordion--tabs .tab:hover, .ootb-tabcordion--tabs .tab:focus {
+}
+
+
+
+/*structure*/
+.ootb-tabcordion.has-tabs .ootb-tabcordion--entry::before {
+  display: none;
+}
+
+.ootb-tabcordion.has-tabs .ootb-tabcordion--entry.is-active .ootb-tabcordion--entry-content {
+  opacity: 1;
+  transition: opacity 400ms ease-in-out;
+}
+.ootb-tabcordion.has-tabs .ootb-tabcordion--entry .ootb-tabcordion--entry-content {
+  opacity: 0;
+  transition: opacity 400ms ease-in-out;
+}
+.ootb-tabcordion--entry-container {
+  overflow: hidden;
+}
+
+.ootb-tabcordion--entry:hover, .ootb-tabcordion--entry:focus {
+  outline: none;
+}
+
+
+/*# sourceMappingURL=index.css.map <-- maps the compiled css back to its original source*/
+
+
+
+
+/*setting text styles, fonts, ect..*/
+p {
+  line-height: 1.6;
+}
+
+
+
+
+.nameHere .contactArea .tabStuff {
+  font-family: "Space Grotesk" ;
+}
+
+/*.navTags {*/
+/*  font-family: 'Gluten';*/
+/*}*/
+
+
+
+.foodThought {
+  font-family: "Annie Use Your Telescope";
+  font-size: 1rem;
+}
+

@@ -10,7 +10,23 @@ module.exports = {
             'xl': '1280px',
             '2xl': '1536px'
         },
-        extend: {},
+        extend: {
+            animation: {
+                text: 'text 6s ease infinite',
+            },
+            keyframes: {
+                text: {
+                    '0%, 100%': {
+                        'background-size': '200% 200%',
+                        'background-position': 'left center',
+                    },
+                    '50%': {
+                        'background-size': '200% 200%',
+                        'background-position': 'right center',
+                    },
+                },
+            },
+        },
     },
     plugins: [
         require('daisyui'),
