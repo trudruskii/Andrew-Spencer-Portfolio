@@ -28,7 +28,7 @@ html {
 
 .ootb-tabcordion {
   background: lightgray;
-  box-shadow: 1px 3px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.2);
   max-width: 500px;
   height: auto;
   margin: 5rem auto 5rem auto;
@@ -96,13 +96,20 @@ html {
 
 .ootb-tabcordion--entry.is-active .ootb-tabcordion--entry-content {
   margin-top: 1em;
-  height: 180px;
+  height: 200px;
   max-height: auto;
   opacity: 1;
   transition: margin 400ms ease-out -100ms;
   border: solid darkgray;
   overflow: auto;
+}
 
+@media (max-width: 768px) {
+  .ootb-tabcordion--entry.is-active .ootb-tabcordion--entry-content {
+    height: auto; /* Adjust height for smaller screens */
+    max-height: none; /* Remove max-height for smaller screens */
+    transition: none; /* Remove transition for smaller screens */
+  }
 }
 
 
@@ -123,9 +130,7 @@ html {
   background:  #00CED1;
 }
 
-h4, myName {
-  color: #00CED1;
-}
+
 
 .ootb-tabcordion--entry.is-active::before {
 }
