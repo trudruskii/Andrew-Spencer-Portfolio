@@ -9,86 +9,200 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous"/>
     <link href="https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Bahianita&family=Exo+2&family=Gluten:slnt,wght@-4,100..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
     <title>Andrew Spencer's Portfolio</title>
 </head>
 <body>
-    <div id="Up" class="flex justify-center relative myName">
-        <span class=
-                      "border-t-4 border-t-teal-400  z-10 md:absolute md:left-81 md:top-20 text-5xl font-black animate-text bg-gradient-to-r from-teal-400 via-black to-teal-400 bg-clip-text text-transparent nameHere"
+
+    <div id="myName" class="flex justify-center relative myName">
+        <span class="nameHere
+        absolute top-12 md:absolute md:left-81 md:top-20 z-10
+        w-full
+        md:w-auto
+        md:border-t-4 border-t-teal-400
+        mt-10 md:mt-4
+        text-3xl md:text-5xl font-black
+        animate-text bg-clip-text text-transparent
+        bg-gradient-to-r from-teal-400 via-black to-teal-400
+        "
         >Andrew Spencer</span>
     </div>
 
     <p class="p-8"></p>
 
     <div class= "relative flex-container my-24 mx-10 md:px-6 border-4 border-gray-200 bg-gradient-to-b from-gray-600 to-gray-900 rounded-lg">
-        <h4 class="border-t-2 border-t-teal-400 absolute md:right-28 top-0 mr-10 font-bold text-4xl mt-10  md:mx-auto animate-text bg-gradient-to-r from-teal-400 via-white to-black bg-clip-text text-transparent contactArea">Lets work together</h4>
 
-            <div class="flex flex-wrap justify-center mb-32">
-                <div class="mt-10 w-full static shrink-0 grow-0 basis-auto md:mb-0 md:w-6/12 sm:w-3/6 md:px-3 lg:px-6 mePhoto">
-                    <img src="public/images/imagePlaceHolder.jpg" alt="Andrew Spencer" class="h-2/3 w-1/3 transform rotate-6 rounded-xl shadow-lg mx-auto"/>
-                        <p class="text-center md:text-left sm:text-left mt-10 p-2  font-black animate-text bg-gradient-to-r from-teal-400 via-white to-teal-500 bg-clip-text text-transparent foodThought">
-                            I am an entry level Full Stack Web Developer and absolutely love working on new projects. In addition to my current stack I am extremely versatile and am always reading and trying to learn new things.
+            <div class="flex flex-wrap justify-center ">
 
-                            I'd love the opportunity to work on a project for you or jump right into an internship.
-                        </p>
+                <h4 class="
+                border-t-2 border-t-teal-400
+                relative md:absolute top-0 right-0 md:right-28
+                text-center font-bold text-4xl
+                mr-20 md:mr-10 mt-10
+                animate-text bg-clip-text text-transparent
+                bg-gradient-to-r from-teal-400 via-white to-black">
+                    Get in touch</h4>
+
+                <div class="mt-10 w-full shrink-0 grow-0 basis-auto md:mb-0 md:w-6/12 sm:w-3/6 md:px-3 lg:px-6">
+
+                    <img src="public/images/imagePlaceHolder.jpg" alt="Andrew Spencer"
+                         class="mePhoto
+                    h-40 md:h-96
+                    w-40 md:w-96
+                    border border-teal-400 rounded-xl shadow-lg
+                    flex-grow-0
+                    transform rotate-6
+                    mx-auto"/>
+
+                    <p class="foodThought
+                    text-center text-sm md:text-lg md:text-left sm:text-left font-black
+                    mt-10 p-2
+                    animate-text bg-clip-text text-transparent
+                    bg-gradient-to-r from-teal-400 via-white to-teal-500">
+                        I am a junior level Full Stack Web Developer. I spend most of my free time learning new things I can do with coding. In addition to my current stack I am extremely versatile and am a quick learner. I am currently looking for a company to work or intern for where I can expand my coding skills and work with more experienced developers and learn from them. I am also open to do any type of freelance work.
+                    </p>
 
                 </div>
 
-                <div class="md:absolute left-10 -top-40 static">
+                <div class="relative md:absolute md:left-10 md:-top-40 static">
+
                     <div class="ootb-tabcordion p-4 container">
+
                         <div class="ootb-tabcordion--tabs gap-1" role="tablist" aria-label="TabCordion">
-                            <button class=
-                                            "tab is-active bg-black text-white mb-2 text-lg content-center" role="tab" aria-selected="true" aria-controls="tab1-tab" id="tab1"
+
+                            <button class="tab is-active
+                            bg-black
+                            text-sm md:text-lg text-white
+                            mb-2
+                            text-center content-center"
+                                    role="tab" aria-selected="true" aria-controls="tab1-tab" id="tab1"
                             >Education</button>
-                            <button class=
-                                            "tab text-white bg-black text-center content-center text-lg" role="tab" aria-selected="false" aria-controls="tab2-tab" id="tab2" tabindex="-1"
+
+                            <button class="tab
+                            bg-black
+                            text-center content-center
+                            mb-2
+                            text-white text-sm md:text-lg"
+                                    role="tab" aria-selected="false" aria-controls="tab2-tab" id="tab2" tabindex="-1"
                             >Certifications</button>
-                            <button class=
-                                            "tab text-white bg-black text-center content-center text-lg" role="tab" aria-selected="false" aria-controls="tab3-tab" id="tab3" tabindex="-1"
+
+                            <button class="tab
+                            bg-black
+                            text-center content-center
+                            mb-2
+                            text-white text-sm md:text-lg"
+                                    role="tab" aria-selected="false" aria-controls="tab3-tab" id="tab3" tabindex="-1"
                             >Resume</button>
+
                         </div>
 
                         <div class="portfolioStart  p-10 mb-8 relative mr-10 pr-20">
-                    <span class=
-                                  "portFolioTitle font-black border-t-2 border-t-teal-400 animate-text bg-gradient-to-l from-teal-400 via-black  bg-clip-text text-transparent absolute right-0 top-0 text-4xl order-last md:mx-auto"
+
+                    <span class="portFolioTitle
+                    border-t-2 border-t-teal-400 bg-gradient-to-l from-teal-400 via-black
+                    animate-text bg-clip-text text-transparent
+                    absolute right-0 top-0
+                    text-3xl md:text-4xl font-black
+                    order-last
+                    md:mx-auto"
                     >myPortfolio</span>
                         </div>
 
                         <section id="tab1-tab" class="ootb-tabcordion--entry is-active" data-title="Education" tabindex="0" role="tabpanel" aria-labelledby="tab1">
+
                             <div class="ootb-tabcordion--entry-container">
+
                                 <div class="ootb-tabcordion--entry-content">
-                                    <ul class="list-disc ml-4 text-black leading-10 decoration-double underline font-bold tabStuff">
+
+                                    <ul class="tabStuff
+                                    list-disc
+                                    ml-4
+                                    text-black font-bold text-sm md:text-lg leading-10
+                                    decoration-double underline
+                                    ">
                                         <li>4.0 GPA Beville State Community College </li>
                                         <li>CNM Ingenuity</li>
                                         <li>CNM - finishing CS degree</li>
+                                        <li>Additionally, I am always trying to learn new things</li>
                                     </ul>
+
                                 </div>
+
                             </div>
+
                         </section>
 
                         <section id="tab2-tab" class="ootb-tabcordion--entry" data-title="Certifications" tabindex="-1" role="tabpanel" aria-labelledby="tab2">
+
                             <div class="ootb-tabcordion--entry-container">
+
                                 <div class="ootb-tabcordion--entry-content text-white">
-                                    <ul class="list-disc ml-4 text-black leading-10 decoration-double underline font-bold tabStuff">
+
+                                    <ul class="tabStuff
+                                    ml-4
+                                    list-disc
+                                    text-sm md:text-lg leading-10 font-bold text-black
+                                    decoration-double underline
+                                     ">
                                         <li>Full Stack Web Development</li>
                                         <li>Phlebotomy Certification  (no longer current)</li>
                                     </ul>
+
                                 </div>
+
                             </div>
+
                         </section>
 
                         <section id="tab3-tab" class="ootb-tabcordion--entry" data-title="Resume" tabindex="-1" role="tabpanel" aria-labelledby="tab3">
 
-                            <div class="ootb-tabcordion--entry-container">
+                            <div class="ootb-tabcordion--entry-container flex">
+
                                 <div class="ootb-tabcordion--entry-content tab">
+
                                     <ul class="text-black ml-4 tabStuff">
-                                        <h1 class="font-bold text-lg md:text-3xl font-black animate-text bg-gradient-to-r from-teal-400 via-black to-teal-400 bg-clip-text text-transparent text-right pb-6">Andrew Spencer</h1>
-                                        <p class="leading-normal text-md md:text-2xl text-left font-black pt-2  decoration-double underline">myObjective:</p>
+
+                                        <div class="flex items-center md:grid md:grid-cols-3">
+
+                                            <button class="
+                                            w-36 h-12 p-1
+                                            md:col-span-1
+                                            bg-gradient-to-t from-teal-400 via-white to-teal-400
+                                            border-2 border-black rounded-full
+                                            text-black">
+                                                <a href="/public/Andrew_M_Spencer.pdf" class="block">myResume</a>
+                                            </button>
+
+                                            <h1 class="
+                                            md:col-span-2 pb-6
+                                            font-bold text-lg md:text-3xl font-black text-right
+                                            animate-text bg-clip-text text-transparent
+                                            bg-gradient-to-r from-teal-400 via-black to-teal-400
+                                            ">Andrew Spencer</h1>
+
+                                        </div>
+
+                                        <p class="
+                                        leading-normal text-md md:text-2xl text-left font-black
+                                        pt-2
+                                        decoration-double underline">myObjective:</p>
+
                                         <p class="menu-dropdown-show text-xs md:text-sm leading-normal text-center"> To acquire fruitful and stable employment at a reputable company that offers opportunities for growth and learning.</p>
-                                        <hr class="w-full h-0.5 mx-auto my-2 bg-teal-400 decoration-accent border-0 rounded md:my-10">
-                                        <h3 class="text-right font-bold text-lg md:text-2xl underline  decoration-double">myStack:</h3>
+
+                                        <hr class="
+                                        w-full h-0.5 md:my-10
+                                        mx-auto my-1
+                                        bg-gradient-to-l from-teal-400 via-black to-teal-400
+                                        border-0 rounded">
+
+                                        <h3 class="
+                                        text-right font-bold text-lg md:text-2xl
+                                        underline decoration-double">
+                                            myStack:</h3>
+
                                         <h3 class="text-center text-sm md:text-lg font-bold py-4 underline">Frontend</h3>
+
                                         <ul class="grid grid-cols-2 gap-4  text-black text-xs md:text-sm mx-auto">
                                             <li>TailwindCSS</li>
                                             <li>React</li>
@@ -97,16 +211,33 @@
                                             <li>Typescript</li>
                                             <li>Javascript</li>
                                         </ul>
+
                                         <h3 class="text-center text-sm md:text-lg font-bold pt-4 pb-4 underline">Backend</h3>
+
                                         <ul class="grid grid-cols-2 gap-4 mx-auto pb-4 text-xs md:text-sm text-black">
                                             <li class="text-center">PostgreSQL</li>
                                             <li class="text-center">Javascript</li>
                                             <li class="text-center">Node.js</li>
                                             <li class="text-center">Bash</li>
                                             </ul>
-                                        <hr class="w-full h-0.5 mx-auto my-2 bg-teal-400 border-0 rounded md:my-10">
-                                        <h3 class="text-right pt-4 underline font-bold text-lg md:text-2xl underline decoration-double">Ability Summary</h3>
-                                        <ul class="grid grid-cols-1  gap-4 text-left text-black text-xs md:text-sm mx-auto font-bold list-disc pb-4 text-black">
+
+                                        <hr class="
+                                        w-full h-0.5 mx-auto my-1 md:my-10
+                                        bg-gradient-to-l from-teal-400 via-black to-teal-400
+                                        border-0 rounded">
+
+                                        <h3 class="
+                                        text-right font-bold text-lg md:text-2xl
+                                        pt-4
+                                        underline decoration-double">
+                                            Ability Summary</h3>
+
+                                        <ul class="
+                                        grid grid-cols-1 gap-4
+                                        text-left text-black text-xs md:text-sm font-bold
+                                        mx-auto pb-4
+                                        list-disc">
+                                        <li>Versatile and quick learner</li>
                                         <li>Leadership skills</li>
                                         <li>Ability to train new hires on all systems and processes</li>
                                         <li>Capacity to multitask</li>
@@ -116,8 +247,14 @@
                                         <li>Proficient with computers, phlebotomy, medical terminology, and CSR terminology.</li>
                                         <li>Self-motivated and dedicated individual</li>
                                         </ul>
-                                        <hr class="w-full h-0.5 mx-auto my-1 bg-gradient-to-l from-teal-400 via-black to-teal-400 border-0 rounded md:my-10">
+
+                                        <hr class="
+                                        w-full h-0.5 mx-auto my-1 md:my-10
+                                        bg-gradient-to-l from-teal-400 via-black to-teal-400
+                                        border-0 rounded">
+
                                         <h3 class="text-right font-bold pt-4 underline py-4 text-lg md:text-2xl">Employment History</h3>
+
                                         <ul class="pb-4 text-black">
                                             <li class="text-center pb-4 font-bold text-xs md:text-sm underline">
                                                 <p>Operations - Conversion Crew</p>
@@ -127,14 +264,16 @@
                                             </li>
                                             <p class="text-left text-xs md:text-sm pb-4">Position handles setting up and taking down for events at convention center. Helps keep events orderly/clean while events are taking place. Ensures facility is clean/flipped and ready for next events.</p>
                                         </ul>
+
                                         <ul class="pb-4 text-black">
                                             <li class="text-center pb-4 font-bold text-xs md:text-sm underline">
                                                 <p>Customer Service Representative Supervisor</p>
                                                 <p>S&P Data LLC</p>
                                                 <p>Rio Rancho, New Mexico 11/20 - 03/21</p>
                                             </li>
-                                            <p class="text-left text-xs md:text-sm pb-4">Managed/Supervised 35-40 agents. Daily Huddles. Monitored agent daily-monthly stats. Live listening and real time coachings with agents as needed. Handled deescalation calls. Provided additional chat support for agents. Prior to being promoted internally to supervisor I also took on the role of a CSR Agent. My job responsibilities included providing billing support, payment processing, call triaging, tech support on electronic devices and online web access troubleshooting.</p>
+                                            <p class="text-left text-xs md:text-sm pb-4">Managed/Supervised 35-40 agents. Daily Huddles. Monitored agent daily-monthly stats. Live call listening with real time coaching agents as needed. Handled deescalation calls. Provided additional chat support for agents throughout workday. Prior to being promoted internally to supervisor I also took on the role of a CSR Agent. My job responsibilities included providing billing support, payment processing, call triaging, tech support on electronic devices and online web access troubleshooting.</p>
                                         </ul>
+
                                             <ul class="pb-4 text-black">
                                                 <li class="text-center pb-4 font-bold text-xs md:text-sm underline">
                                                     <p>Examiner</p>
@@ -143,6 +282,7 @@
                                                 </li>
                                                 <p class="text-left text-xs md:text-sm pb-4">Contracted Phlebotomy skill for health screenings, drug testing and wellness events. Worked remotely and utilized my vehicle and home as my office.</p>
                                                 </ul>
+
                                         <ul class="pb-4 text-black">
                                             <li class="text-center pb-4 font-bold text-xs md:text-sm underline">
                                                 <p>Donation Specialist</p>
@@ -152,6 +292,7 @@
                                             </li>
                                             <p class="text-left text-xs md:text-sm pb-4">Donation Center experience gained. Worked on a mobile blood unit where sites were set up remote. Performed phlebotomy collections for whole blood and plasma donations. Possessed Class D commerical driver's license for this position.</p>
                                         </ul>
+
                                         <ul class="pb-4 text-black">
                                             <li class="text-center pb-4 font-bold text-xs md:text-sm underline">
                                                 <p>Custodian</p>
@@ -160,6 +301,7 @@
                                             </li>
                                             <p class="text-left text-xs md:text-sm pb-4">  Performed regular cleaning at a monasarry school every weeknight. Cleaning duties included sweeping, mopping and vacuuming. Scrubbed, sanitized, emptied trash and restocked all facility bathrooms.</p>
                                         </ul>
+
                                         <ul class="pb-4 text-black">
                                             <li class="text-center pb-4 font-bold text-xs md:text-sm underline">
                                                 <p>Patient Service Technician (PST)</p>
@@ -169,6 +311,7 @@
                                             </li>
                                             <p class="text-left text-xs md:text-sm pb-4">Position covered both patient service centers and clinical settings where I provided phlebotomy services. Processed orders for testings and billing. Handled shipping of biohazardous specimens and maintained supply inventory.</p>
                                         </ul>
+
                                         <ul class="pb-4 text-black">
                                             <li class="text-center pb-4 font-bold text-xs md:text-sm underline">
                                                 <p>Lab Assistant</p>
@@ -178,6 +321,7 @@
                                             </li>
                                             <p class="text-left text-xs md:text-sm pb-4">Provided phlebotomy skills and assisted lab technicians in the lab with processing bio hazardous specimens</p>
                                         </ul>
+
                                         <ul class="pb-4 text-black">
                                             <li class="text-center pb-4 font-bold text-xs md:text-sm underline">
                                                 <p>Intern</p>
@@ -187,34 +331,51 @@
                                             </li>
                                             <p class="text-left text-xs md:text-sm pb-4">Helped transition old paper documents onto computer storage as data entry. Worked in the shipping and receiving department and learned the ins and outs of processing all inbound and outbound packages. Worked directly with IT department and assisted with technical issues and provided troubleshooting support to facility staff.</p>
                                         </ul>
-                                        <hr class="w-full h-0.5 mx-auto my-1 bg-teal-400 border-0 rounded md:my-10">
-                                        <h3 class="text-right font-bold text-lg md:text-2xl pb-4 underline  decoration-double">Education:</h3>
-                                        <ul class="grid grid-cols-1  gap-4 text-left text-black text-xs md:text-sm mx-auto font-bold list-disc pb-4 text-black">
+
+                                        <hr class="
+                                        w-full h-0.5 mx-auto my-1 md:my-10
+                                        bg-gradient-to-l from-teal-400 via-black to-teal-400
+                                        border-0 rounded">
+
+                                        <h3 class="
+                                        text-right font-bold text-lg md:text-2xl
+                                        pb-4
+                                        underline decoration-double">Education:</h3>
+
+                                        <ul class="
+                                        grid grid-cols-1 gap-4
+                                        text-left text-black text-xs md:text-sm mx-auto font-bold
+                                        list-disc
+                                        pb-4">
                                             <li>Beville State Community College (4.0) GPA</li>
                                             <li>CNM Ingenuity Deep Dive Full Stack Web Development</li>
+                                            <li>Mooreville High School - Diploma</li>
 
-                                            General Studies
-                                            High School Diploma
-                                            Mooreville High School, Mooreville, MS
-
-
-                                            CNM Ingenuity
-                                            Full Stack Web Development Certification
-                                            Albuquerque, New Mexico
                                         </p>
                                     </ul>
+
                                 </div>
+
                             </div>
+
                         </section>
+
                     </div>
+
                 </div>
+
             </div>
 
+
+
                 <div class="w-full md:w-96 md:max-w-full static md:absolute right-20 top-20 mx-auto mt-10">
-                    <div class="p-6 sm:rounded-md">
-                        <form method="POST" action="subscriberform.php">
+
+                    <div class="sm:rounded-md">
+
+                        <form method="POST" action="https://formspree.io/f/xdoqbbez">
+
                             <label class="block mb-6">
-                                <span class="text-green-100">Name</span>
+                                <span class="text-white" type="name:">Name</span>
                                 <input
                                         type="text"
                                         name="name"
@@ -234,7 +395,7 @@
                                 />
                             </label>
                             <label class="block mb-6">
-                                <span class="text-green-100">Email address</span>
+                                <span class="text-white">Email address</span>
                                 <input
                                         name="email"
                                         type="email"
@@ -255,7 +416,7 @@
                                 />
                             </label>
                             <label class="block mb-6">
-                                <span class="text-green-100">Message</span>
+                                <span class="text-white">Message</span>
                                 <textarea name="message"
                                           class="
             block
@@ -269,8 +430,8 @@
             focus:ring-indigo-200
             focus:ring-opacity-50
           "
-                                          rows="5"
-                                          placeholder="I'd love to work with you on your next project">
+                                          rows="4"
+                                          placeholder="Message box">
                                 </textarea>
                             </label>
                             <div class="mb-6">
@@ -280,14 +441,16 @@
             ml-28
             h-10
             px-5
-            text-green-700
+            text-teal-400
             bg-white
             rounded-lg
             transition-colors
             duration-150
             focus:shadow-outline
-            hover:text-green-100
-            hover:bg-green-800
+            font-black
+            hover:text-black
+            hover:bg-teal-400
+
           ">Contact Me
                                 </button>
                             </div>
@@ -310,28 +473,15 @@
             </div>
     </div>
 
-
-
-
+    <button class="fixed bottom-10 left-1/2 p-1 border border-black bg-teal-400 shadow-xl rounded-full text-white">
+        <a href="projects.html"/>myProjects
+    </button>
 
 
 <script type="module" src="/src/main.js"></script>
+    <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
 </body>
 </html>
 
 
 
-<!--<div class="contactQuick hover:animate-pulse">-->
-<!--    <div class="flex gap-2 justify-end items-end">-->
-<!--        <svg class="w-[20px] h-[20px] text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">-->
-<!--            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M18.427 14.768 17.2 13.542a1.733 1.733 0 0 0-2.45 0l-.613.613a1.732 1.732 0 0 1-2.45 0l-1.838-1.84a1.735 1.735 0 0 1 0-2.452l.612-.613a1.735 1.735 0 0 0 0-2.452L9.237 5.572a1.6 1.6 0 0 0-2.45 0c-3.223 3.2-1.702 6.896 1.519 10.117 3.22 3.221 6.914 4.745 10.12 1.535a1.601 1.601 0 0 0 0-2.456Z"/>-->
-<!--        </svg>-->
-<!--        <a href="tel:505-785-5646" class="text-green-100 font-bold text-sm hover:text-2xl lg:block md:block sm:hidden xs:hidden md:mr-24">505-785-5646</a>-->
-<!--    </div>-->
-<!--    <div class="flex gap-2 justify-end items-end">-->
-<!--        <svg class="w-[20px] h-[20px] text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">-->
-<!--            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" d="M7 9h5m3 0h2M7 12h2m3 0h5M5 5h14a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1h-6.616a1 1 0 0 0-.67.257l-2.88 2.592A.5.5 0 0 1 8 18.477V17a1 1 0 0 0-1-1H5a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1Z"/>-->
-<!--        </svg>-->
-<!--        <a href="mailto:andrewspencer90@proton.me" class="text-sm text-green-100 hover:text-2xl hover:animate-pulse hover:bg-white hover:text-green-800 lg:block md:block sm:hidden xs:hidden">andrewspencer90@proton.me</a>-->
-<!--    </div>-->
-<!--</div>-->

@@ -2,8 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
+/*responsive for mobile*/
+@media (max-width: 768px) {
+  .ootb-tabcordion--entry.is-active .ootb-tabcordion--entry-content {
+    height: auto; /* Adjust height for smaller screens */
+    max-height: none; /* Remove max-height for smaller screens */
+    transition: none; /* Remove transition for smaller screens */
+  }
+}
 @media (max-width: 768px) {
   #Up {
     position: fixed;
@@ -20,12 +26,7 @@ html {
   scroll-behavior: smooth;
 }
 
-
-/*come back here*/
-/*oobt-tabcordion*/
-
-
-
+/*accordion structure*/
 .ootb-tabcordion {
   background: lightgray;
   box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.2);
@@ -35,20 +36,6 @@ html {
   border-radius: 20px;
   font-family: "Space Grotesk" ;
 }
-
-.ootb-tabcordion.has-tabs .ootb-tabcordion--tabs {
-  opacity: 1;
-  height: auto;
-  visibility: visible;
-}
-
-.ootb-tabcordion.has-tabs .ootb-tabcordion--entry {
-  min-height: 0;
-}
-
-
-
-
 
 .ootb-tabcordion--tabs {
   opacity: 0;
@@ -66,16 +53,10 @@ html {
   cursor: pointer;
 }
 
-
-
-.ootb-tabcordion--tabs .tab.is-active:hover, .ootb-tabcordion--tabs .tab.is-active:focus {
-  background: #00CED1;
-  margin-bottom: 2em;
-  padding:20px;
-}
-
-.ootb-tabcordion--entry {
-  overflow: hidden;
+.ootb-tabcordion.has-tabs .ootb-tabcordion--tabs {
+  opacity: 1;
+  height: auto;
+  visibility: visible;
 }
 
 .ootb-tabcordion--entry::before {
@@ -90,13 +71,26 @@ html {
   border-radius: 20px;
 }
 
+.ootb-tabcordion.has-tabs .ootb-tabcordion--entry::before {
+  display: none;
+}
 
+.ootb-tabcordion--entry {
+  overflow: hidden;
+}
 
-
+.ootb-tabcordion--entry-content {
+  position: relative;
+  margin-top: -100%;
+  height: 4rem;
+  opacity: 0;
+  transition: margin 500ms ease-in;
+  padding: 1rem;
+}
 
 .ootb-tabcordion--entry.is-active .ootb-tabcordion--entry-content {
   margin-top: 1em;
-  height: 200px;
+  height: 300px;
   max-height: auto;
   opacity: 1;
   transition: margin 400ms ease-out -100ms;
@@ -104,61 +98,16 @@ html {
   overflow: auto;
 }
 
-@media (max-width: 768px) {
-  .ootb-tabcordion--entry.is-active .ootb-tabcordion--entry-content {
-    height: auto; /* Adjust height for smaller screens */
-    max-height: none; /* Remove max-height for smaller screens */
-    transition: none; /* Remove transition for smaller screens */
-  }
-}
-
-
-
-.ootb-tabcordion--entry-content {
-  position: relative;
-  margin-top: -100%;
-  height: 10;
-  opacity: 0;
-  transition: margin 500ms ease-in;
-  padding: 1rem;
-}
-/*setting colors*/
-
-
-
-.ootb-tabcordion--entry.is-active:hover::before, .ootb-tabcordion--entry.is-active:focus::before {
-  background:  #00CED1;
-}
-
-
-
-.ootb-tabcordion--entry.is-active::before {
-}
-
-.ootb-tabcordion--entry:hover::before, .ootb-tabcordion--entry:focus::before {
-}
-
-.ootb-tabcordion--tabs .tab.is-active {
-}
-
-.ootb-tabcordion--tabs .tab:hover, .ootb-tabcordion--tabs .tab:focus {
-}
-
-
-
-/*structure*/
-.ootb-tabcordion.has-tabs .ootb-tabcordion--entry::before {
-  display: none;
-}
-
 .ootb-tabcordion.has-tabs .ootb-tabcordion--entry.is-active .ootb-tabcordion--entry-content {
   opacity: 1;
   transition: opacity 400ms ease-in-out;
 }
+
 .ootb-tabcordion.has-tabs .ootb-tabcordion--entry .ootb-tabcordion--entry-content {
   opacity: 0;
   transition: opacity 400ms ease-in-out;
 }
+
 .ootb-tabcordion--entry-container {
   overflow: hidden;
 }
@@ -168,18 +117,38 @@ html {
 }
 
 
-/*# sourceMappingURL=index.css.map <-- maps the compiled css back to its original source*/
 
+/*coloring & style*/
+.ootb-tabcordion--entry.is-active:hover::before, .ootb-tabcordion--entry.is-active:focus::before {
+  background:  #00CED1;
+}
 
+.ootb-tabcordion--entry.is-active::before {
+}
 
+.ootb-tabcordion--entry:hover::before, .ootb-tabcordion--entry:focus::before {
+  background:  #00CED1;
+}
+
+.ootb-tabcordion--tabs .tab.is-active {
+}
+
+.ootb-tabcordion--tabs .tab.is-active:hover, .ootb-tabcordion--tabs .tab.is-active:focus {
+  background: #00CED1;
+  margin-bottom: 2em;
+  padding:20px;
+}
+
+.ootb-tabcordion--tabs .tab:hover, .ootb-tabcordion--tabs .tab:focus {
+  background: #00CED1;
+  margin-bottom: 2em;
+  padding:20px;
+}
 
 /*setting text styles, fonts, ect..*/
 p {
   line-height: 1.6;
 }
-
-
-
 
 .nameHere .contactArea .tabStuff {
   font-family: "Space Grotesk" ;
