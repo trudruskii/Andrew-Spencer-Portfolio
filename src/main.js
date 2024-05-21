@@ -2,29 +2,9 @@ import './styles/index.css'
 import 'flowbite'
 
 
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-            target.scrollIntoView({
-                behavior: 'smooth'
-            });
-        }
-    });
-});
 
 
-
-
-
-
-
-
-
-//GIORGOS SARIGIANNIDIS's functionality for accordion//
-
+//GIORGOS SARIGIANNIDIS
 (function () {
     'use strict';
 
