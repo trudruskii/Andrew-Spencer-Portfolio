@@ -9,7 +9,7 @@ import 'flowbite'
     'use strict';
 
     const keyboardSupport = function(container, hasTabs) {
-        const tablist = container.querySelectorAll('[role="tablist"]')[0];
+        const tablist = container.querySelectorAll('[role="tablist"]');
         let tabs;
         let panels;
 
