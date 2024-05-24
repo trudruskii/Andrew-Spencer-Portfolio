@@ -2,16 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  background-image:linear-gradient(to bottom, #cdcbcb, #000000)
+}
+
 
 
 /*responsive for mobile*/
-@media (max-width: 768px) {
-  .ootb-tabcordion--entry.is-active .ootb-tabcordion--entry-content {
-    height: auto; /* Adjust height for smaller screens */
-    max-height: none; /* Remove max-height for smaller screens */
-    transition: none; /* Remove transition for smaller screens */
-  }
-}
+
 @media (max-width: 768px) {
   #myName {
     width: 100%;
