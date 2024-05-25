@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  background-image:linear-gradient(to bottom, #cdcbcb, #000000)
+  background-image:linear-gradient(to bottom, #1E273BFF, #FBB57DFF)
 }
 
 
@@ -117,27 +117,27 @@ html {
 
 /*coloring & style*/
 .ootb-tabcordion--entry.is-active:hover::before, .ootb-tabcordion--entry.is-active:focus::before {
-  background:  #00CED1;
+  background:  #FBB57DFF;
 }
 
 .ootb-tabcordion--entry.is-active::before {
 }
 
 .ootb-tabcordion--entry:hover::before, .ootb-tabcordion--entry:focus::before {
-  background:  #00CED1;
+  background:  #FBB57DFF;
 }
 
 .ootb-tabcordion--tabs .tab.is-active {
 }
 
 .ootb-tabcordion--tabs .tab.is-active:hover, .ootb-tabcordion--tabs .tab.is-active:focus {
-  background: #00CED1;
+  background: #FBB57DFF;
   margin-bottom: 2em;
   padding:20px;
 }
 
 .ootb-tabcordion--tabs .tab:hover, .ootb-tabcordion--tabs .tab:focus {
-  background: #00CED1;
+  background: #FBB57DFF;
   margin-bottom: 2em;
   padding:20px;
 }
@@ -153,6 +153,5 @@ p {
 
 .foodThought {
   font-family: "Annie Use Your Telescope";
-  font-size: 1rem;
 }
 

@@ -15,53 +15,64 @@
 </head>
 <body>
 
-
-
-<div class="flex justify-center relative myName">
+<!--my name-->
+<div class="flex flex-col md:flex-row justify-center md:justify-center pt-10 myName">
         <span id='myName' class="myName
-        flex justify-center items-center
-        md:w-auto
-        md:border-t-4 border-t-teal-400
-        mt-10 md:mt-4
-        text-3xl md:text-5xl font-black
+        md:border-t-4 border-t-white
+        mt-10 md:mt-4 pb-2 ml-10 md:ml-0
+        text-sm md:text-3xl font-black
         animate-text bg-clip-text text-transparent
-        bg-gradient-to-r from-teal-400 via-black to-teal-400
+        bg-gradient-to-r from-[#FBB57DFF] via-white to-black
         "
-        >Andrew Spencer</span>
+        >Andrew Spencer | Full Stack Web Developer</span>
 </div>
 
-<p class="p-8"></p>
 
-<div class= "relative flex-container  mx-10 md:px-6 border-4 border-gray-200 bg-gradient-to-b from-gray-600 to-gray-900 rounded-lg">
 
-    <div class="flex flex-wrap justify-center lg:h-screen">
+<!--Parent Container to all the skill content-->
+<div class= "relative flex-container lg:h-screen mx-10 md:px-6 border-4 border-gray-200 bg-gradient-to-b from-slate-600 to-slate-900 rounded-lg">
 
-        <div class="mt-10 w-full shrink-0 grow-0 basis-auto md:mb-0 md:w-6/12 sm:w-3/6 md:px-3 lg:px-6">
 
-            <img src="public/images/imagePlaceHolder.jpg" alt="Andrew Spencer"
-                 class="mePhoto
-                    h-60 lg:h-96
-                    w-60 lg:w-96
-                    border border-teal-400 rounded-xl shadow-lg
-                    flex-grow-0
-                    transform rotate-6
-                    mx-auto"/>
+<!--    this is the progress bar-->
+    <div class="flex flex-wrap justify-center mt-10">
+        <div class="mt-10 w-1/3 shrink-0 grow-0 basis-auto justify-end items-end">
+            <div class="flex justify-between mb-1">
+                <span class="text-base font-medium text-[#FBB57DFF]">TailwindCSS</span>
+                <span class="text-sm font-medium text-[#FBB57DFF]">45%</span>
+            </div>
+            <div class="w-full bg-gray-200 border-2 border-black rounded-full h-3.5">
+                <div class="bg-[#FBB57DFF] h-2.5 rounded-full text-xs" style="width: 85%"></div>
+            </div>
+        <!--2-->
+            <div class="flex justify-between mb-1">
+                <span class="text-base font-medium text-[#FBB57DFF]">Flowbite</span>
+                <span class="text-sm font-medium text-[#FBB57DFF]">45%</span>
+            </div>
+            <div class="w-full bg-gray-200 rounded-full h-3.5 border-2 border-black">
+                <div class="bg-[#FBB57DFF] h-2.5 rounded-full" style="width: 45%"></div>
+            </div>
+        <!--3-->
+            <div class="flex justify-between mb-1">
+                <span class="text-base font-medium text-[#FBB57DFF]">Flowbite</span>
+                <span class="text-sm font-medium text-[#FBB57DFF]">45%</span>
+            </div>
+            <div class="w-full bg-gray-200 rounded-full h-3.5 border-2 border-black">
+                <div class="bg-[#FBB57DFF] h-2.5 rounded-full" style="width: 45%"></div>
+            </div>
 
-            <p class="foodThought
-                    text-lg sm:text-left font-black
-                    mt-10 p-2
-                    animate-text bg-clip-text text-transparent
-                    bg-gradient-to-r from-teal-400 via-white to-teal-500">
-                I am a junior level Full Stack Web Developer. I spend most of my free time learning new things I can do with coding. In addition to my current stack I am extremely versatile and am a quick learner. I am currently looking for a company to work or intern for where I can expand my coding skills and work with more experienced developers and learn from them. I am also open to do any type of freelance work.
-            </p>
-
+        <!--    4-->
+            <div class="flex justify-between mb-1">
+                <span class="text-base font-medium text-[#FBB57DFF]">Flowbite</span>
+                <span class="text-sm font-medium text-[#FBB57DFF]">45%</span>
+            </div>
+            <div class="w-full bg-gray-200 rounded-full h-3.5 border-2 border-black">
+                <div class="bg-[#FBB57DFF] h-2.5 rounded-full" style="width: 45%"></div>
+            </div>
         </div>
+    </div>
 
-        <hr class="bg-gradient-to-r from-gray-600 via-black to-gray-600 p-0.5 mt-4 w-full md:hidden"/>
-
-        <div class="relative lg:absolute lg:left-2 lg:-top-40">
-
-            <div class="ootb-tabcordion p-4">
+            <!--Start of Accordion Container-->
+            <div class="ootb-tabcordion p-4 relative lg:absolute lg:left-2 lg:-top-40">
 
                 <div class="ootb-tabcordion--tabs gap-1" role="tablist" aria-label="TabCordion">
 
@@ -91,18 +102,19 @@
 
                 </div>
 
-                <div class="portfolioStart  p-10 mb-8 relative mr-10 pr-20">
+                <div class="portfolioStart mb-8 relative mr-10 pr-20">
 
                     <span class="portFolioTitle
-                    border-t-2 border-t-teal-400 bg-gradient-to-l from-teal-400 via-black
+                   bg-gradient-to-l from-[#FBB57DFF] via-black
                     animate-text bg-clip-text text-transparent
                     absolute right-0 top-0
-                    text-3xl md:text-4xl font-black
+                    text-2xl md:text-3xl font-black
                     order-last
                     md:mx-auto"
                     >myPortfolio</span>
                 </div>
 
+                <!--Education Tab-->
                 <section id="tab1-tab" class="ootb-tabcordion--entry is-active" data-title="Education" tabindex="0" role="tabpanel" aria-labelledby="tab1">
 
                     <div class="ootb-tabcordion--entry-container">
@@ -127,6 +139,7 @@
 
                 </section>
 
+                <!--Certification Tab-->
                 <section id="tab2-tab" class="ootb-tabcordion--entry" data-title="Certifications" tabindex="-1" role="tabpanel" aria-labelledby="tab2">
 
                     <div class="ootb-tabcordion--entry-container">
@@ -149,20 +162,19 @@
 
                 </section>
 
+                    <!--Resume Tab -->
                 <section id="tab3-tab" class="ootb-tabcordion--entry" data-title="Resume" tabindex="-1" role="tabpanel" aria-labelledby="tab3">
 
                     <div class="ootb-tabcordion--entry-container flex">
 
                         <div class="ootb-tabcordion--entry-content tab">
 
-                            <ul class="text-black ml-4 tabStuff">
-
                                 <div class="flex items-center md:grid md:grid-cols-3">
 
                                     <button class="
                                             w-36 h-12 p-1
                                             md:col-span-1
-                                            bg-gradient-to-t from-teal-400 via-white to-teal-400
+                                            bg-gradient-to-t from-[#FBB57DFF] via-white to-[#FBB57DFF]
                                             border-2 border-black rounded-full
                                             text-black">
                                         <a href="/public/Andrew_M_Spencer.pdf" class="block">myResume</a>
@@ -172,7 +184,7 @@
                                             md:col-span-2 pb-6
                                             font-bold text-lg md:text-3xl font-black text-right
                                             animate-text bg-clip-text text-transparent
-                                            bg-gradient-to-r from-teal-400 via-black to-teal-400
+                                            bg-gradient-to-r from-[#FBB57DFF] via-black to-[#FBB57DFF]
                                             ">Andrew Spencer</h1>
 
                                 </div>
@@ -187,7 +199,7 @@
                                 <hr class="
                                         w-full h-0.5 md:my-10
                                         mx-auto my-1
-                                        bg-gradient-to-l from-teal-400 via-black to-teal-400
+                                        bg-gradient-to-l from-[#FBB57DFF] via-black to-[#FBB57DFF]
                                         border-0 rounded">
 
                                 <h3 class="
@@ -219,7 +231,7 @@
 
                                 <hr class="
                                         w-full h-0.5 mx-auto my-1 md:my-10
-                                        bg-gradient-to-l from-teal-400 via-black to-teal-400
+                                        bg-gradient-to-l from-[#FBB57DFF] via-black to-[#FBB57DFF]
                                         border-0 rounded">
 
                                 <h3 class="
@@ -246,7 +258,7 @@
 
                                 <hr class="
                                         w-full h-0.5 mx-auto my-1 md:my-10
-                                        bg-gradient-to-l from-teal-400 via-black to-teal-400
+                                        bg-gradient-to-l from-[#FBB57DFF] via-black to-[#FBB57DFF]
                                         border-0 rounded">
 
                                 <h3 class="text-right font-bold pt-4 underline py-4 text-lg md:text-2xl">Employment History</h3>
@@ -286,7 +298,8 @@
                                         <p>Tupelo, MS 10/16 - 02/17</p>
                                         <p>Supervisor: Lino Chu | 877-464-4376</p>
                                     </li>
-                                    <p class="text-left text-xs md:text-sm pb-4">Donation Center experience gained. Worked on a mobile blood unit where sites were set up remote. Performed phlebotomy collections for whole blood and plasma donations. Possessed Class D commerical driver's license for this position.</p>
+                                    <p class="text-left text-xs md:text-sm pb-4">Donation Center experience gained. Worked on a mobile blood unit where sites were set up remote. Performed phlebotomy collections for whole blood and plasma donations. Possessed Class D commerical driver's license for this position
+                                    </p>
                                 </ul>
 
                                 <ul class="pb-4 text-black">
@@ -330,7 +343,7 @@
 
                                 <hr class="
                                         w-full h-0.5 mx-auto my-1 md:my-10
-                                        bg-gradient-to-l from-teal-400 via-black to-teal-400
+                                        bg-gradient-to-l from-[#FBB57DFF] via-black to-[#FBB57DFF]
                                         border-0 rounded">
 
                                 <h3 class="
@@ -346,43 +359,73 @@
                                     <li>Beville State Community College (4.0) GPA</li>
                                     <li>CNM Ingenuity Deep Dive Full Stack Web Development</li>
                                     <li>Mooreville High School - Diploma</li>
-
-                                    </p>
                                 </ul>
-
                         </div>
-
                     </div>
-
                 </section>
-
             </div>
+</div>
+
+
+</div>
+
+
+<div class="bg-gradient-to-t from-slate-600 to-slate-900 border-t-4 border-white h-full mt-6 md:-mt-10 flex flex-col md:flex-row ">
+
+    <div class="flex flex-col md:flex-row flex-grow">
+
+        <div class="flex justify-center items-center md:w-1/2">
+
+            <img src="public/images/imagePlaceHolder.jpg" alt="Andrew Spencer"
+                 class="mePhoto
+                            h-60 lg:h-96
+                            w-60 lg:w-96
+                            rounded-xl shadow-2xl
+                            flex-grow-0
+                            transform rotate-6
+                            mx-auto"/>
+        </div>
+
+        <div class="flex flex-col justify-center items-center md:w-1/2 max-w-lg mx-auto">
+            <p class="foodThought
+            font-black text-sm md:text-lg
+            p-2
+            animate-text bg-clip-text text-transparent
+            bg-gradient-to-r from-[#FBB57DFF] via-white to-[#FBB57DFF]">
+                Hello, my name is Andrew Spencer and I am a Junior Full Stack Developer.
+            </p>
+            <p class="foodThought
+            font-black text-sm md:text-lg
+            p-2
+            animate-text bg-clip-text text-transparent
+            bg-gradient-to-r from-[#FBB57DFF] via-white to-[#FBB57DFF]">After successfully completing a rigorous Full Stack Web Development course at CNM Ingenuity - Deep Dive, I've honed a diverse skill set that extends beyond my current stack. With a natural aptitude for versatility and a penchant for rapid learning, I am eager to embark on the next phase of my journey. I am actively seeking opportunities to join a forward-thinking company as either an employee or intern, where I can further cultivate my coding prowess alongside seasoned professionals. I'm driven by the prospect of collaborating with experienced developers, absorbing their expertise, and contributing meaningfully to innovative projects. Additionally, I'm enthusiastic about exploring freelance opportunities across various domains, ready to tackle new challenges and deliver exceptional results.
+            </p>
 
         </div>
 
     </div>
-    <hr class="bg-gradient-to-r from-gray-600 via-black to-gray-600 p-0.5 mb-4 md:hidden"/>
 
-    <div class="flex flex-col items-center">
-        <h4 class="
-                relative lg:absolute lg:top-0 lg:right-28
-                font-bold text-3xl md:text-4xl
+    <div class="bg-[#FBB57DFF] w-1/2 h-0.5 mx-auto mt-4 md:hidden"></div>
+
+    <div class="w-full md:w-1/2 lg:w-1/3 mt-4 md:mt-20 flex flex-col pr-8">
+            <h4 class="
+                relative
+                font-bold text-2xl
                 md:w-auto
+                p-4
+                text-center
                 bg-clip-text text-transparent
-                bg-gradient-to-r from-teal-400 via-white to-black">
-            Get in touch</h4>
-        <div class="w-3/4 md:w-96 lg:max-w-full lg:absolute right-5 top-12 mx-auto mt-10">
+                bg-gradient-to-r from-[#FBB57DFF] via-white to-black">
+                I'm ready, are you?</h4>
 
-            <div>
+        <form method="POST" action="https://formspree.io/f/xdoqbbez">
 
-                <form method="POST" action="https://formspree.io/f/xdoqbbez">
-
-                    <label class="block mb-6">
-                        <span class="text-white" type="name:">Name</span>
-                        <input
-                                type="text"
-                                name="name"
-                                class="
+            <label class="block mb-6">
+                <span class="text-white" type="name:">Name</span>
+                <input
+                        type="text"
+                        name="name"
+                        class="
             block
             w-full
             mt-1
@@ -394,15 +437,15 @@
             focus:ring-indigo-200
             focus:ring-opacity-50
           "
-                                placeholder="Enter your name"
-                        />
-                    </label>
-                    <label class="block mb-6">
-                        <span class="text-white">Email address</span>
-                        <input
-                                name="email"
-                                type="email"
-                                class="
+                        placeholder="Enter your name"
+                />
+            </label>
+            <label class="block mb-6">
+                <span class="text-white">Email address</span>
+                <input
+                        name="email"
+                        type="email"
+                        class="
             block
             w-full
             mt-1
@@ -414,14 +457,14 @@
             focus:ring-indigo-200
             focus:ring-opacity-50
           "
-                                placeholder="Example@Domain.com"
-                                required
-                        />
-                    </label>
-                    <label class="block mb-6">
-                        <span class="text-white">Message</span>
-                        <textarea name="message"
-                                  class="
+                        placeholder="Example@Domain.com"
+                        required
+                />
+            </label>
+            <label class="block mb-6">
+                <span class="text-white">Message</span>
+                <textarea name="message"
+                          class="
             block
             w-full
             mt-1
@@ -433,54 +476,65 @@
             focus:ring-indigo-200
             focus:ring-opacity-50
           "
-                                  rows="4"
-                                  placeholder="Hi."></textarea>
-                    </label>
-                    <div class="mb-6">
-                        <button
-                                type="submit"
-                                class="
+                          rows="4"
+                          placeholder="Hi."></textarea>
+            </label>
+            <div class="mb-6">
+                <button
+                        type="submit"
+                        class="
 
-            ml-16 md:ml-28
+            flex
+            justify-center items-center
             h-8
-            px-5
+            px-4
             text-black
-            bg-teal-400
+            bg-[#FBB57DFF]
             rounded-lg
             transition-colors
             duration-150
             focus:shadow-outline
             font-black
-            hover:text-teal-400
+            hover:text-[#FBB57DFF]
             hover:bg-white
             contactMe
 
           ">Submit
-                        </button>
-                    </div>
-                </form>
+                </button>
             </div>
-        </div>
+        </form>
     </div>
+</div>
+
+
+
+                        <!--Footer Content-->
+<footer class="bg-slate-600  border-t:none md:border-t md:border-t-[#FBB57DFF] pr-2">
+    <div class="bg-[#FBB57DFF] md:bg-slate-600 h-0.5 w-1/2 mx-auto"></div>
+    <div class="flex flex-wrap flex-col items-center md:items-end pb-1">
+        <h2 class="text-white font-bold text-xl leading-tight">Andrew Spencer</h2>
+        <h2 class="text-white font-bold text-xl leading-tight">Junior Full Stack Web Developer</h2>
+    </div>
+
     <div class="
     flex flex-container
-    justify-center
-    gap-2 mb-8">
+    justify-center md:justify-end
+    gap-2">
         <a href="https://discordapp.com/users/1212277399555805206" aria-label="Discord">
-            <svg class="discord" xmlns="http://www.w3.org/2000/svg" height="32" width="40" viewBox="0 0 640 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ffffff" d="M524.5 69.8a1.5 1.5 0 0 0 -.8-.7A485.1 485.1 0 0 0 404.1 32a1.8 1.8 0 0 0 -1.9 .9 337.5 337.5 0 0 0 -14.9 30.6 447.8 447.8 0 0 0 -134.4 0 309.5 309.5 0 0 0 -15.1-30.6 1.9 1.9 0 0 0 -1.9-.9A483.7 483.7 0 0 0 116.1 69.1a1.7 1.7 0 0 0 -.8 .7C39.1 183.7 18.2 294.7 28.4 404.4a2 2 0 0 0 .8 1.4A487.7 487.7 0 0 0 176 479.9a1.9 1.9 0 0 0 2.1-.7A348.2 348.2 0 0 0 208.1 430.4a1.9 1.9 0 0 0 -1-2.6 321.2 321.2 0 0 1 -45.9-21.9 1.9 1.9 0 0 1 -.2-3.1c3.1-2.3 6.2-4.7 9.1-7.1a1.8 1.8 0 0 1 1.9-.3c96.2 43.9 200.4 43.9 295.5 0a1.8 1.8 0 0 1 1.9 .2c2.9 2.4 6 4.9 9.1 7.2a1.9 1.9 0 0 1 -.2 3.1 301.4 301.4 0 0 1 -45.9 21.8 1.9 1.9 0 0 0 -1 2.6 391.1 391.1 0 0 0 30 48.8 1.9 1.9 0 0 0 2.1 .7A486 486 0 0 0 610.7 405.7a1.9 1.9 0 0 0 .8-1.4C623.7 277.6 590.9 167.5 524.5 69.8zM222.5 337.6c-29 0-52.8-26.6-52.8-59.2S193.1 219.1 222.5 219.1c29.7 0 53.3 26.8 52.8 59.2C275.3 311 251.9 337.6 222.5 337.6zm195.4 0c-29 0-52.8-26.6-52.8-59.2S388.4 219.1 417.9 219.1c29.7 0 53.3 26.8 52.8 59.2C470.7 311 447.5 337.6 417.9 337.6z"/></svg>
+            <svg class="discord" xmlns="http://www.w3.org/2000/svg" height="20" width="25" viewBox="0 0 640 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ffffff" d="M524.5 69.8a1.5 1.5 0 0 0 -.8-.7A485.1 485.1 0 0 0 404.1 32a1.8 1.8 0 0 0 -1.9 .9 337.5 337.5 0 0 0 -14.9 30.6 447.8 447.8 0 0 0 -134.4 0 309.5 309.5 0 0 0 -15.1-30.6 1.9 1.9 0 0 0 -1.9-.9A483.7 483.7 0 0 0 116.1 69.1a1.7 1.7 0 0 0 -.8 .7C39.1 183.7 18.2 294.7 28.4 404.4a2 2 0 0 0 .8 1.4A487.7 487.7 0 0 0 176 479.9a1.9 1.9 0 0 0 2.1-.7A348.2 348.2 0 0 0 208.1 430.4a1.9 1.9 0 0 0 -1-2.6 321.2 321.2 0 0 1 -45.9-21.9 1.9 1.9 0 0 1 -.2-3.1c3.1-2.3 6.2-4.7 9.1-7.1a1.8 1.8 0 0 1 1.9-.3c96.2 43.9 200.4 43.9 295.5 0a1.8 1.8 0 0 1 1.9 .2c2.9 2.4 6 4.9 9.1 7.2a1.9 1.9 0 0 1 -.2 3.1 301.4 301.4 0 0 1 -45.9 21.8 1.9 1.9 0 0 0 -1 2.6 391.1 391.1 0 0 0 30 48.8 1.9 1.9 0 0 0 2.1 .7A486 486 0 0 0 610.7 405.7a1.9 1.9 0 0 0 .8-1.4C623.7 277.6 590.9 167.5 524.5 69.8zM222.5 337.6c-29 0-52.8-26.6-52.8-59.2S193.1 219.1 222.5 219.1c29.7 0 53.3 26.8 52.8 59.2C275.3 311 251.9 337.6 222.5 337.6zm195.4 0c-29 0-52.8-26.6-52.8-59.2S388.4 219.1 417.9 219.1c29.7 0 53.3 26.8 52.8 59.2C470.7 311 447.5 337.6 417.9 337.6z"/></svg>
         </a>
         <a href="https://www.facebook.com/trudrewski/" aria-label="Facebook">
-            <svg class="faceBook bg-white rounded-full" xmlns="http://www.w3.org/2000/svg" height="32" width="32" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#0866ff" d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"/></svg>
+            <svg class="facebook" xmlns="http://www.w3.org/2000/svg" height="20" width="12.5" viewBox="0 0 320 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ffffff" d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z"/></svg>
         </a>
         <a href="https://www.linkedin.com/in/andrew-spencer-/" aria-label="Linkedin">
-            <svg xmlns="http://www.w3.org/2000/svg" height="32" width="28" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ffffff" d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"/></svg>
+            <svg class="linkedin" xmlns="http://www.w3.org/2000/svg" height="20" width="17.5" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ffffff" d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"/></svg>
         </a>
         <a href="https://github.com/trudruskii" aria-label="Github">
-            <svg class="gitHub" xmlns="http://www.w3.org/2000/svg" height="32" width="31" viewBox="0 0 496 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ffffff" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+            <svg class="github" xmlns="http://www.w3.org/2000/svg" height="20" width="19.375" viewBox="0 0 496 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ffffff" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
         </a>
     </div>
 
-</div>
+</footer>
 
 
 
