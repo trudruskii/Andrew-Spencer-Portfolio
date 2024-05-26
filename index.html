@@ -4,93 +4,141 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="src/styles/index.css" rel="stylesheet">
-    <script src="https://unpkg.com/split-type"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous"/>
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Bahianita&family=Exo+2&family=Gluten:slnt,wght@-4,100..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <title>Andrew Spencer's Portfolio</title>
 </head>
 <body>
 
 <!--my name-->
-<div class="flex flex-col md:flex-row justify-center md:justify-center pt-10 myName">
-        <span id='myName' class="myName
-        md:border-t-4 border-t-white
-        mt-10 md:mt-4 pb-2 ml-10 md:ml-0
-        text-sm md:text-3xl font-black
-        animate-text bg-clip-text text-transparent
-        bg-gradient-to-r from-[#FBB57DFF] via-white to-black
-        "
-        >Andrew Spencer | Full Stack Web Developer</span>
-</div>
+
+    <div class="flex flex-col md:flex-row justify-center items-center pt-10 myName">
+        <span id="myName" class="myName
+            md:border-t-4 border-t-white
+            mt-10 md:mt-4 pb-2 ml-40 md:ml-80
+            text-lg md:text-5xl font-black
+            animate-text bg-clip-text text-transparent
+            bg-gradient-to-r from-[#FBB57DFF] via-white to-black
+            "
+        >
+            <span class="block md:inline">Andrew Spencer</span>
+            <span class="hidden md:inline"> | </span>
+            <span class="block md:inline">Full Stack Web Developer</span>
+        </span>
+    </div>
+
 
 
 
 <!--Parent Container to all the skill content-->
-<div class= "relative flex-container lg:h-screen mx-10 md:px-6 border-4 border-gray-200 bg-gradient-to-b from-slate-600 to-slate-900 rounded-lg">
+<div class= "relative flex-container lg:h-auto mx-10 md:px-6 border-4 border-gray-200 bg-gradient-to-b from-slate-600 to-slate-900 rounded-lg">
 
 
-<!--    this is the progress bar-->
-    <div class="flex flex-wrap justify-center mt-10">
-        <div class="mt-10 w-1/3 shrink-0 grow-0 basis-auto justify-end items-end">
-            <div class="flex justify-between mb-1">
-                <span class="text-base font-medium text-[#FBB57DFF]">TailwindCSS</span>
-                <span class="text-sm font-medium text-[#FBB57DFF]">45%</span>
-            </div>
-            <div class="w-full bg-gray-200 border-2 border-black rounded-full h-3.5">
-                <div class="bg-[#FBB57DFF] h-2.5 rounded-full text-xs" style="width: 85%"></div>
-            </div>
-        <!--2-->
-            <div class="flex justify-between mb-1">
-                <span class="text-base font-medium text-[#FBB57DFF]">Flowbite</span>
-                <span class="text-sm font-medium text-[#FBB57DFF]">45%</span>
-            </div>
-            <div class="w-full bg-gray-200 rounded-full h-3.5 border-2 border-black">
-                <div class="bg-[#FBB57DFF] h-2.5 rounded-full" style="width: 45%"></div>
-            </div>
-        <!--3-->
-            <div class="flex justify-between mb-1">
-                <span class="text-base font-medium text-[#FBB57DFF]">Flowbite</span>
-                <span class="text-sm font-medium text-[#FBB57DFF]">45%</span>
-            </div>
-            <div class="w-full bg-gray-200 rounded-full h-3.5 border-2 border-black">
-                <div class="bg-[#FBB57DFF] h-2.5 rounded-full" style="width: 45%"></div>
-            </div>
+    <div class="m-8"></div>
 
-        <!--    4-->
-            <div class="flex justify-between mb-1">
-                <span class="text-base font-medium text-[#FBB57DFF]">Flowbite</span>
-                <span class="text-sm font-medium text-[#FBB57DFF]">45%</span>
+
+    <!--This is the: my stack section-->
+    <h1 class="
+    text-[#FFD3B3FF]
+    text-center font-bold text-xl md:text-3xl
+    border-b-2 border-b-slate-700
+    pb-10 pt-10 ml-0 md:ml-96"
+    >
+        <span class="block md:inline">My Evolving Stack</span>
+        <span class="hidden md:inline">|</span>
+        <span class="block md:inline">Progress Over Time</span>
+    </h1>
+
+
+
+
+    <!--               parent div of entire stack collection-->
+    <div class="flex flex-row flex-wrap items-center justify-center md:items-end md:justify-end mt-10 md:mt-32 gap-10">
+
+
+        <!--frontend section-->
+        <div class="flex flex-col items-center justify-center p-16 border-4 border-white rounded-2xl shadow-2xl">
+
+            <h2 class="text-white text-2xl md:text-4xl pb-20 animate__animated animate__rollIn animate-duration animated-delay-5 ">Frontend</h2>
+
+            <div class="md:flex md:flex-wrap grid grid-cols-2 md:space-x-4 items-center justify-center gap-10 md:mx-0">
+
+                <div class="shrink-0 flex flex-col items-center animate__animated animate__fadeInLeft animate-duration mx-2 animated-delay-1">
+                    <h3 class="text-white md:text-lg text-sm mb-4">TailwindCSS</h3>
+                    <i class="text-4xl md:text-7xl flex justify-center devicon-tailwindcss-original colored"></i>
+                </div>
+
+                <div class="shrink-0 flex flex-col items-center animate__animated animate__fadeInRight animate-duration animated-delay-2">
+                    <h3 class="text-white md:text-lg text-sm mb-4">CSS</h3>
+                    <i class="text-4xl text-blue-500 md:text-7xl flex justify-center devicon-css3-plain"></i>
+                </div>
+
+                <div class="shrink-0 flex flex-col items-center animate__animated animate__fadeInLeft animate-duration animated-delay-3">
+                    <h3 class="text-white md:text-lg text-sm mb-4">Typescript</h3>
+                    <i class="text-4xl text-purple-600 md:text-7xl flex justify-center devicon-typescript-plain"></i>
+                </div>
+
+                <div class="shrink-0 flex flex-col items-center animate__animated animate__fadeInRight animate-duration animated-delay-1">
+                    <h3 class="text-white md:text-lg text-sm mb-4">React</h3>
+                    <i class="text-4xl text-white md:text-7xl flex justify-center devicon-react-original colored"></i>
+                </div>
+
+
             </div>
-            <div class="w-full bg-gray-200 rounded-full h-3.5 border-2 border-black">
-                <div class="bg-[#FBB57DFF] h-2.5 rounded-full" style="width: 45%"></div>
+        </div>
+
+        <div class="flex flex-col items-center justify-center mt-4 border-4 bg-slate-600 rounded-xl shadow-2xl p-16 backend">
+
+            <h1 class="text-white text-2xl md:text-4xl pb-20 animate__animated animate__rollIn animate-duration animated-delay-5">Backend</h1>
+
+            <div class="md:flex md:flex-wrap grid grid-cols-2 md:space-x-4 items-center justify-center gap-10 md:mx-0">
+
+                <div class="shrink-0 flex flex-col items-center animate__animated animate__fadeInLeft animate-duration animated-delay-1">
+                    <h3 class="text-white md:text-lg text-sm mb-4">PostgreSQL</h3>
+                    <i class="text-4xl md:text-7xl flex justify-center devicon-postgresql-plain colored"></i>
+
+                </div>
+
+                <div class="shrink-0 flex flex-col items-center animate__animated animate__fadeInRight animate-duration animated-delay-2">
+                    <h3 class="text-white md:text-lg text-sm mb-4">Insomnia</h3>
+                    <i class="text-4xl text-white md:text-7xl flex justify-center devicon-insomnia-plain colored"></i>
+                </div>
+
+                <div class="shrink-0 flex flex-col items-center animate__animated animate__fadeInLeft animate-duration animated-delay-3">
+                    <h3 class="text-white md:text-lg text-sm mb-4">Docker</h3>
+                    <i class="text-4xl text-white md:text-7xl flex justify-center devicon-docker-plain colored"></i>
+                </div>
+
+                <div class="shrink-0 flex flex-col items-center animate__animated animate__fadeInRight animate-duration animated-delay-1">
+                    <h3 class="text-white md:text-lg text-sm mb-4">Node.js</h3>
+                    <i class="text-4xl text-yellow-200 md:text-7xl flex justify-center devicon-nodejs-plain"></i>
+                </div>
+
+                <div class="shrink-0 flex flex-col items-center animate__animated animate__fadeInRight animate-duration animated-delay-1">
+                    <i class="text-4xl text-white md:text-7xl flex justify-center devicon-nextjs-original-wordmark"></i>
+                </div>
+
+                <div class="shrink-0 flex flex-col items-center animate__animated animate__fadeInRight animate-duration animated-delay-1">
+                    <h3 class="text-white md:text-lg text-sm mb-4">Bash</h3>
+                    <i class="text-4xl text-white md:text-7xl flex justify-center devicon-bash-plain"></i>
+                </div>
+
+
+
+
             </div>
         </div>
     </div>
-    <div class="relative md:absolute bottom-0 left-1/3 transform -translate-x-1/3 w-full flex flex-col md:flex-row pt-10 mb-20 gap-10">
-        <div class="mx-10 text-white p-1 w-auto md:w-1/4 h-64 bg-gray-400 border-4 border-white flex rounded-lg items-center">
-            <div class="border-2 border-black w-full h-full flex items-center justify-center">
-                Project Container #1
-            </div>
-
-        </div>
-        <div class="mx-10 text-white p-4 w-auto md:w-1/4 h-64 bg-gray-400 border-4 border-white flex items-center">
-            Project Container #1
-        </div>
-        <div class="mx-10 text-white p-4 w-auto md:w-1/4 h-64 bg-gray-400 border-4 border-white flex items-center">
-            Project Container #1
-        </div>
-        <div class="mx-10 text-white p-4 w-auto md:w-1/4 h-64 bg-gray-400 border-4 border-white flex items-center">
-            Project Container #1
-        </div>
-    </div>
 
 
-            <!--Start of Accordion Container-->
-            <div class="ootb-tabcordion p-4 relative lg:absolute lg:left-2 lg:-top-40">
+
+
+
+    <!--Start of Accordion Container-->
+    <div class="ootb-tabcordion p-4 relative lg:absolute lg:left-2 lg:-top-40">
 
                 <div class="ootb-tabcordion--tabs gap-1" role="tablist" aria-label="TabCordion">
 
@@ -120,7 +168,7 @@
 
                 </div>
 
-                <div class="portfolioStart mb-8 relative mr-10 pr-20">
+                <div class="portfolioStart mb-8 relative mr-10 pr-20 pb-4">
 
                     <span class="portFolioTitle
                    bg-gradient-to-l from-[#FBB57DFF] via-black
@@ -128,8 +176,9 @@
                     absolute right-0 top-0
                     text-2xl md:text-3xl font-black
                     order-last
-                    md:mx-auto"
-                    >myPortfolio</span>
+                    md:mx-auto
+                    "
+                    >my-Portfolio</span>
                 </div>
 
                 <!--Education Tab-->
@@ -171,7 +220,7 @@
                                     decoration-double underline
                                      ">
                                 <li>Full Stack Web Development</li>
-                                <li>Phlebotomy Certification  (no longer current)</li>
+                                <li>Phlebotomy Certification</li>
                             </ul>
 
                         </div>
@@ -382,6 +431,45 @@
                     </div>
                 </section>
             </div>
+
+
+
+
+
+    <div class="flex flex-col w-full mb-20 gap-10 md:gap-6 lg:gap-10 mt-40">
+
+        <h2 class="text-[#FFD3B3FF] text-lg md:text-7xl mb-6 text-center underline md:underline-none animate__animated animate__jackInTheBox animate-duration animated-delay-4 ">my-Projects</h2>
+
+        <div class="flex flex-col md:flex-row flex-wrap md:flex-nowrap justify-center items-center mx-auto gap-4 md:gap-6 lg:gap-8">
+
+            <div class="flex-shrink-0 mx-4 text-white p-1 w-full md:w-1/3 lg:w-1/2 h-96 bg-gray-400 border-4 border-white rounded-lg shadow-2xl opacity-70 flex items-center justify-center">
+
+                <div class="border-2 border-black w-full h-full flex items-center justify-center">
+                    Project Stuff goes here #1
+                </div>
+
+            </div>
+
+            <div class="flex-shrink-0 mx-4 text-white p-1 w-full md:w-1/3 lg:w-1/2 h-96 bg-gray-400 border-4 border-white rounded-lg shadow-2xl opacity-70 flex items-center justify-center">
+
+                <div class="border-2 border-black w-full h-full flex items-center justify-center">
+                    Some more project stuff goes here #2
+                </div>
+
+            </div>
+
+            <div class="flex-shrink-0 mx-4 text-white p-1 w-full md:w-1/3 lg:w-1/2 h-96 bg-gray-400 border-4 border-white rounded-lg shadow-2xl opacity-70 flex items-center justify-center">
+
+                <div class="border-2 border-black w-full h-full flex items-center justify-center">
+                    Even more project stuff goes here #3
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
 </div>
 
 
@@ -526,7 +614,7 @@
 
 
                         <!--Footer Content-->
-<footer class="bg-slate-600  border-t:none md:border-t md:border-t-[#FBB57DFF] pr-2">
+<footer class="bg-slate-600  border-t:none md:border-t md:border-t-slate-700 pr-2">
     <div class="bg-[#FBB57DFF] md:bg-slate-600 h-0.5 w-1/2 mx-auto"></div>
     <div class="flex flex-wrap flex-col items-center md:items-end pb-1">
         <h2 class="text-white font-bold text-xl leading-tight">Andrew Spencer</h2>

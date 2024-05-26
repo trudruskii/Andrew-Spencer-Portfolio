@@ -2,9 +2,35 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  background-image:linear-gradient(to bottom, #1E273BFF, #FBB57DFF)
+
+
+
+/*animations*/
+.animated-delay-1 {
+  animation-delay: 0.5s;
 }
+
+.animated-delay-2 {
+  animation-delay: 1s;
+}
+
+.animated-delay-3 {
+  animation-delay: 1.5s;
+}
+
+.animated-delay-5 {
+  animation-delay: 2s;
+}
+
+.animated-delay-4 {
+  animation-delay: 3s
+}
+
+.animate-duration {
+  animation-duration: 1s;
+}
+
+
 
 
 
@@ -116,6 +142,11 @@ html {
 
 
 /*coloring & style*/
+
+body {
+  background-image:linear-gradient(to bottom, #1E273BFF, #FBB57DFF)
+}
+
 .ootb-tabcordion--entry.is-active:hover::before, .ootb-tabcordion--entry.is-active:focus::before {
   background:  #FBB57DFF;
 }
