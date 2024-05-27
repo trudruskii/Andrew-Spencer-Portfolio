@@ -5,34 +5,6 @@
 
 
 
-/*animations*/
-.animated-delay-1 {
-  animation-delay: 0.5s;
-}
-
-.animated-delay-2 {
-  animation-delay: 1s;
-}
-
-.animated-delay-3 {
-  animation-delay: 1.5s;
-}
-
-.animated-delay-5 {
-  animation-delay: 2s;
-}
-
-.animated-delay-4 {
-  animation-delay: 3s
-}
-
-.animate-duration {
-  animation-duration: 1s;
-}
-
-
-
-
 
 /*responsive for mobile*/
 
@@ -54,6 +26,7 @@ html {
 .ootb-tabcordion {
   background: lightgray;
   box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.2);
+  width: auto;
   max-width: 500px;
   height: auto;
   margin: 5rem auto 5rem auto;
@@ -92,7 +65,7 @@ html {
   border-radius: 10px;
   border-right: 2px solid white;
   border-bottom: .5px solid white;
-  cursor: pointer;
+  cursor: default;
 }
 
 .ootb-tabcordion.has-tabs .ootb-tabcordion--tabs {
@@ -141,6 +114,7 @@ html {
 
 
 
+
 /*coloring & style*/
 
 body {
@@ -173,6 +147,9 @@ body {
   padding:20px;
 }
 
+
+
+
 /*setting text styles, fonts, ect..*/
 p {
   line-height: 1.6;
@@ -186,3 +163,30 @@ p {
   font-family: "Annie Use Your Telescope";
 }
 
+
+
+
+/*animations*/
+.animated-delay-1 {
+  animation-delay: 1s;
+}
+
+.animated-delay-2 {
+  animation-delay: 1.5s;
+}
+
+.animated-delay-3 {
+  animation-delay: 2s;
+}
+
+.animated-delay-5 {
+  animation-delay: 0.5s;
+}
+
+.animated-delay-4 {
+  animation-delay: 3s
+}
+
+.animate-duration {
+  animation-duration: 1s;
+}
