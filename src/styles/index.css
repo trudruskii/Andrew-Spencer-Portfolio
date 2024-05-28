@@ -5,19 +5,6 @@
 
 
 
-
-/*responsive for mobile*/
-
-@media (max-width: 768px) {
-  #myName {
-    width: 100%;
-  }
-  .nameHere {
-    left: 50%;
-    transform: translateX(-50%);
-  }
-}
-
 html {
   scroll-behavior: smooth;
 }
@@ -164,7 +151,6 @@ p {
 
 
 
-
 /*animations*/
 .animated-delay-1 {
   animation-delay: 1s;
@@ -188,4 +174,34 @@ p {
 
 .animate-duration {
   animation-duration: 1s;
+}
+
+
+/*avatar image display*/
+.avatarImage {
+  --b: 0px; /* border thickness */
+  --c: #FBB57DFF; /* border color */
+  --f: 1; /* initial scale */
+
+  width: var(--s);
+  aspect-ratio: 1;
+  padding-top: calc(var(--s)/5);
+  cursor: crosshair;
+  border-radius: 0 0 999px 999px;
+  --_g: 50%/calc(100%/var(--f)) 100% no-repeat content-box;
+
+
+  background: radial-gradient var(--_g);
+  -webkit-mask: radial-gradient(circle closest-side,#000 99%,#0000) var(--_g);
+  transform: scale(var(--f));
+  transition: .5s;
+}
+
+.avatarImage:hover {
+  --f: 1.50;
+}
+
+.faceCard {
+  background-image: url('/projects/images/pixelbg.png');
+  opacity: 10;
 }

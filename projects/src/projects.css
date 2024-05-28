@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.background {
+    background-image: url('/projects/images/pixelbg.png');
+    background-size: cover; /* Ensures the background image covers the entire area */
+    background-repeat: no-repeat; /* Prevents the background image from repeating */
+    height: 100vh; /* Sets the height to 100% of the viewport height */
+}
