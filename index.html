@@ -7,11 +7,48 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+
+<!--    //test link-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"  rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
     <link href="https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Bahianita&family=Exo+2&family=Gluten:slnt,wght@-4,100..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <title>Andrew Spencer's Portfolio</title>
 </head>
 <body>
+<script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                animation: {
+                    text: 'text 6s ease infinite',
+                },
+                keyframes: {
+                    text: {
+                        '0%, 100%': {
+                            'background-size': '200% 200%',
+                            'background-position': 'left center',
+                        },
+                        '50%': {
+                            'background-size': '200% 200%',
+                            'background-position': 'right center',
+                        },
+                    },
+                },
+            },
+        },
+    }
+</script>
+
+
+
+
+
+
+
+
 
 
 
@@ -64,7 +101,7 @@
                                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" d="M7 9h5m3 0h2M7 12h2m3 0h5M5 5h14a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1h-6.616a1 1 0 0 0-.67.257l-2.88 2.592A.5.5 0 0 1 8 18.477V17a1 1 0 0 0-1-1H5a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1Z"/>
                             </svg>
 
-                            <a href="mailto:andrewspencer90@proton.me" class="text-sm text-[#FBB57DFF] hover:underline">anything@andrewmspencer.com</a>
+                            <a href="mailto:andrewspencer90@proton.me" class="text-sm text-[#FBB57DFF] hover:underline">webdev@andrewmspencer.com</a>
                         </div>
                     </div>
                 </div>
@@ -107,7 +144,7 @@
                             <i class="text-4xl md:text-5xl flex justify-center devicon-tailwindcss-original colored"></i>
                     </div>
 
-                    <div class="shrink-0 flex flex-col items-center animate__animated animate__fadeInRight animate-duration animated-delay-1">
+                    <div class="shrink-0 flex flex-col items-center animate__animated animate__fadeInRight animate-duration animated-delay-3">
                         <h3 class="text-white md:text-lg text-sm mb-2 md:mb-4">CSS</h3>
 
                             <i class="text-4xl text-blue-500 md:text-5xl flex justify-center devicon-css3-plain"></i>
@@ -731,6 +768,8 @@ Send me a message."></textarea>
 
 
 
+<!--test script link-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
 
 
 <script defer type="module" src="/src/main.js"></script>
