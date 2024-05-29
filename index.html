@@ -1,24 +1,20 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="src/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link href="src/styles/index.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"  rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
-
-<!--    //test link-->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"  rel="stylesheet" />
-
-
-    <script type="module" src="main.js"></script>
-    <script src="https://cdn.tailwindcss.com"></script>
-
-
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Bahianita&family=Exo+2&family=Gluten:slnt,wght@-4,100..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <title>Andrew Spencer's Portfolio</title>
+
 </head>
 <body>
 <script>
@@ -73,11 +69,11 @@
             </span>
 
 
-            <span class="ml-auto mr-10 grid grid-cols-1 hidden md:block border-4 border-white rounded-2xl faceCard">
+            <div class="ml-auto mr-10 grid grid-cols-1 hidden md:block border-4 border-white rounded-2xl faceCard">
 
 
                 <div class="flex flex-row  w-96">
-                        <img class="w-20 h-20 md:w-40 md:h-40 mr-0 md:mr-32 shrink-0 rounded-full avatarImage" src="public/images/avatar-3.png" alt="Avatar Image"/>
+                        <img class="w-20 h-20 md:w-40 md:h-40 mr-0 md:mr-32 shrink-0 rounded-full avatarImage" src="public/images/avatar-3.png" alt="Avatar Image">
                     <ul class="flex flex-col justify-center items-center">
                         <li><a href="#projects" class="text-sm text-white hover:underline">My-Projects</a></li>
                         <li><a href="#contact" class="text-sm text-white hover:underline">Contact-Me</a></li>
@@ -108,7 +104,7 @@
                         </div>
                     </div>
                 </div>
-            </span>
+            </div>
         </div>
 
     <div class="h-0.5 w-1/2 mx-auto bg-[#FBB57DFF] block md:hidden"></div>
@@ -131,7 +127,7 @@
     <div class="w-1/4 mx-auto h-0.5 bg-gray-500 m-2 block md:hidden"></div>
 
 
-<!--    Front/Back End Technologies-->
+<!--    Front/Back End Technologies/Accordion-->
     <div class="grid grid-cols-1 md:grid-cols-2 mx-auto">
 
         <div class="flex flex-col flex-wrap md:grid md:grid-cols-2">
@@ -184,6 +180,12 @@
 
 
 
+
+
+
+
+
+
             <!--backend section-->
             <div class="flex flex-col items-center justify-center p-4 md:p-10">
 
@@ -232,9 +234,7 @@
 
 <!--        Accordion Section-->
         <div class="ootb-tabcordion p-4">
-
             <div class="ootb-tabcordion--tabs gap-1" role="tablist" aria-label="TabCordion">
-
                 <button class="tab is-active
                             bg-black
                             text-sm md:text-lg text-white
@@ -242,7 +242,6 @@
                             text-center content-center"
                         role="tab" aria-selected="true" aria-controls="tab1-tab" id="tab1"
                 >Education</button>
-
                 <button class="tab
                             bg-black
                             text-center content-center
@@ -250,7 +249,6 @@
                             text-white text-sm md:text-lg"
                         role="tab" aria-selected="false" aria-controls="tab2-tab" id="tab2" tabindex="-1"
                 >Certifications</button>
-
                 <button class="tab
                             bg-black
                             text-center content-center
@@ -258,9 +256,7 @@
                             text-white text-sm md:text-lg"
                         role="tab" aria-selected="false" aria-controls="tab3-tab" id="tab3" tabindex="-1"
                 >Resume</button>
-
             </div>
-
             <div class="portfolioStart mb-8 relative">
 
                     <span class="portFolioTitle
@@ -275,7 +271,7 @@
             </div>
 
             <!--Education Tab-->
-            <section id="tab1-tab" class="ootb-tabcordion--entry is-active" data-title="Education" tabindex="0" role="tabpanel" aria-labelledby="tab1">
+            <div id="tab1-tab" class="ootb-tabcordion--entry is-active" data-title="Education" tabindex="0" role="tabpanel" aria-labelledby="tab1">
 
                 <div class="ootb-tabcordion--entry-container">
 
@@ -297,10 +293,10 @@
 
                 </div>
 
-            </section>
+            </div>
 
             <!--Certification Tab-->
-            <section id="tab2-tab" class="ootb-tabcordion--entry" data-title="Certifications" tabindex="-1" role="tabpanel" aria-labelledby="tab2">
+            <div id="tab2-tab" class="ootb-tabcordion--entry" data-title="Certifications" tabindex="-1" role="tabpanel" aria-labelledby="tab2">
 
                 <div class="ootb-tabcordion--entry-container">
 
@@ -320,10 +316,10 @@
 
                 </div>
 
-            </section>
+            </div>
 
             <!--Resume Tab -->
-            <section id="tab3-tab" class="ootb-tabcordion--entry" data-title="Resume" tabindex="-1" role="tabpanel" aria-labelledby="tab3">
+            <div id="tab3-tab" class="ootb-tabcordion--entry" data-title="Resume" tabindex="-1" role="tabpanel" aria-labelledby="tab3">
 
                 <div class="ootb-tabcordion--entry-container flex">
 
@@ -331,21 +327,21 @@
 
                         <div class="flex items-center md:grid md:grid-cols-3">
 
-                            <button class="
+                            <div class="
                                             w-36 h-12 p-1
                                             md:col-span-1
                                             bg-gradient-to-t from-[#FBB57DFF] via-white to-[#FBB57DFF]
                                             border-2 border-black rounded-full
                                             text-black">
                                 <a href="/public/Andrew_M_Spencer.pdf" class="block myResumePDF">My Resume</a>
-                            </button>
+                            </div>
 
-                            <h1 class="
+                            <h2 class="
                                             md:col-span-2 pb-6
                                             font-bold text-xl md:text-3xl font-black text-right
                                             animate-text bg-clip-text text-transparent
                                             bg-gradient-to-r from-[#FBB57DFF] via-black to-[#FBB57DFF]
-                                            ">Andrew Spencer</h1>
+                                            ">Andrew Spencer</h2>
 
                         </div>
 
@@ -423,83 +419,83 @@
 
                         <h3 class="text-right font-bold pt-4 underline py-4 text-lg md:text-2xl">Employment History</h3>
 
-                        <ul class="pb-4 text-black">
-                            <li class="text-center pb-4 font-bold text-xs md:text-sm underline">
-                                <p>Operations - Conversion Crew</p>
-                                <p>ASM Global</p>
-                                <p>Albuquerque, NM 03/24 - Current</p>
-                                <p>Supervisor: Brian Buseman | 609-820-3111</p>
-                            </li>
-                            <p class="text-left text-xs md:text-sm pb-4">Position handles setting up and taking down for events at convention center. Helps keep events orderly/clean while events are taking place. Ensures facility is clean/flipped and ready for next events.</p>
-                        </ul>
+                        <div class="pb-4 text-black">
+                            <ul class="text-center pb-4 font-bold text-xs md:text-sm underline">
+                                <li>Operations - Conversion Crew</li>
+                                <li>ASM Global</li>
+                                <li>Albuquerque, NM 03/24 - Current</li>
+                                <li>Supervisor: Brian Buseman | 609-820-3111</li>
+                            </ul>
+                            <h4 class="text-left text-xs md:text-sm pb-4">Position handles setting up and taking down for events at convention center. Helps keep events orderly/clean while events are taking place. Ensures facility is clean/flipped and ready for next events.</h4>
+                            </div>
 
-                        <ul class="pb-4 text-black">
-                            <li class="text-center pb-4 font-bold text-xs md:text-sm underline">
-                                <p>Customer Service Representative Supervisor</p>
-                                <p>S&P Data LLC</p>
-                                <p>Rio Rancho, New Mexico 11/20 - 03/21</p>
-                            </li>
+                        <div class="pb-4 text-black">
+                            <ul class="text-center pb-4 font-bold text-xs md:text-sm underline">
+                                <li>Customer Service Representative Supervisor</li>
+                                <li>S&P Data LLC</li>
+                                <li>Rio Rancho, New Mexico 11/20 - 03/21</li>
+                            </ul>
                             <p class="text-left text-xs md:text-sm pb-4">Managed/Supervised 35-40 agents. Daily Huddles. Monitored agent daily-monthly stats. Live call listening with real time coaching agents as needed. Handled deescalation calls. Provided additional chat support for agents throughout workday. Prior to being promoted internally to supervisor I also took on the role of a CSR Agent. My job responsibilities included providing billing support, payment processing, call triaging, tech support on electronic devices and online web access troubleshooting.</p>
-                        </ul>
+                        </div>
 
-                        <ul class="pb-4 text-black">
-                            <li class="text-center pb-4 font-bold text-xs md:text-sm underline">
-                                <p>Examiner</p>
-                                <p>Hooper Holmes</p>
-                                <p>Olathe, KS 09/12 - 12/19</p>
-                            </li>
+                        <div class="pb-4 text-black">
+                            <ul class="text-center pb-4 font-bold text-xs md:text-sm underline">
+                                <li>Examiner</li>
+                                <li>Hooper Holmes</li>
+                                <li>Olathe, KS 09/12 - 12/19</li>
+                            </ul>
                             <p class="text-left text-xs md:text-sm pb-4">Contracted Phlebotomy skill for health screenings, drug testing and wellness events. Worked remotely and utilized my vehicle and home as my office.</p>
-                        </ul>
+                        </div>
 
-                        <ul class="pb-4 text-black">
-                            <li class="text-center pb-4 font-bold text-xs md:text-sm underline">
-                                <p>Donation Specialist</p>
-                                <p>United Blood Services</p>
-                                <p>Tupelo, MS 10/16 - 02/17</p>
-                                <p>Supervisor: Lino Chu | 877-464-4376</p>
-                            </li>
+                        <div class="pb-4 text-black">
+                            <ul class="text-center pb-4 font-bold text-xs md:text-sm underline">
+                                <li>Donation Specialist</li>
+                                <li>United Blood Services</li>
+                                <li>Tupelo, MS 10/16 - 02/17</li>
+                                <li>Supervisor: Lino Chu | 877-464-4376</li>
+                            </ul>
                             <p class="text-left text-xs md:text-sm pb-4">Donation Center experience gained. Worked on a mobile blood unit where sites were set up remote. Performed phlebotomy collections for whole blood and plasma donations. Possessed Class D commerical driver's license for this position
                             </p>
-                        </ul>
+                        </div>
 
-                        <ul class="pb-4 text-black">
-                            <li class="text-center pb-4 font-bold text-xs md:text-sm underline">
-                                <p>Custodian</p>
-                                <p>Jan Pro</p>
-                                <p>Beaufort, SC 02/16 - 04/16</p>
-                            </li>
+                        <div class="pb-4 text-black">
+                            <ul class="text-center pb-4 font-bold text-xs md:text-sm underline">
+                                <li>Custodian</li>
+                                <li>Jan Pro</li>
+                                <li>Beaufort, SC 02/16 - 04/16</li>
+                            </ul>
                             <p class="text-left text-xs md:text-sm pb-4">  Performed regular cleaning at a monasarry school every weeknight. Cleaning duties included sweeping, mopping and vacuuming. Scrubbed, sanitized, emptied trash and restocked all facility bathrooms.</p>
-                        </ul>
+                        </div>
 
-                        <ul class="pb-4 text-black">
-                            <li class="text-center pb-4 font-bold text-xs md:text-sm underline">
-                                <p>Patient Service Technician (PST)</p>
-                                <p>Lab Corp</p>
-                                <p>Winfield, AL 04/13 - 04/16</p>
-                                <p>Supervisor: Shanita Townes | 205-572-0417</p>
-                            </li>
+                        <div class="pb-4 text-black">
+                            <ul class="text-center pb-4 font-bold text-xs md:text-sm underline">
+                                <li>Patient Service Technician (PST)</li>
+                                <li>Lab Corp</li>
+                                <li>Winfield, AL 04/13 - 04/16</li>
+                                <li>Supervisor: Shanita Townes | 205-572-0417</li>
+                            </ul>
                             <p class="text-left text-xs md:text-sm pb-4">Position covered both patient service centers and clinical settings where I provided phlebotomy services. Processed orders for testings and billing. Handled shipping of biohazardous specimens and maintained supply inventory.</p>
-                        </ul>
+                        </div>
 
-                        <ul class="pb-4 text-black">
-                            <li class="text-center pb-4 font-bold text-xs md:text-sm underline">
-                                <p>Lab Assistant</p>
-                                <p>Baptist Memorial Hospital</p>
-                                <p>Oxford, MS 03/11 - 03/13</p>
-                                <p>Supervisor: Jeremy Nichols | 662-232-8428</p>
-                            </li>
+                        <div class="pb-4 text-black">
+                            <ul class="text-center pb-4 font-bold text-xs md:text-sm underline">
+                                <li>Lab Assistant</li>
+                                <li>Baptist Memorial Hospital</li>
+                                <li>Oxford, MS 03/11 - 03/13</li>
+                                <li>Supervisor: Jeremy Nichols | 662-232-8428</li>
+                            </ul>
                             <p class="text-left text-xs md:text-sm pb-4">Provided phlebotomy skills and assisted lab technicians in the lab with processing bio hazardous specimens</p>
-                        </ul>
+                        </div>
 
-                        <ul class="pb-4 text-black">
-                            <li class="text-center pb-4 font-bold text-xs md:text-sm underline">
-                                <p>Intern</p>
-                                <p>Hirel Connectors</p>
-                                <p>Claremont, CA 06/08 - 08/08</p>
-                                <p>Supervisor: Lanette Salas | 909-626-1820</p>
-                            </li>
+                        <div class="pb-4 text-black">
+                            <ul class="text-center pb-4 font-bold text-xs md:text-sm underline">
+                                <li>Intern</li>
+                                <li>Hirel Connectors</li>
+                                <li>Claremont, CA 06/08 - 08/08</li>
+                                <li>Supervisor: Lanette Salas | 909-626-1820</li>
+                            </ul>
                             <p class="text-left text-xs md:text-sm pb-4">Helped transition old paper documents onto computer storage as data entry. Worked in the shipping and receiving department and learned the ins and outs of processing all inbound and outbound packages. Worked directly with IT department and assisted with technical issues and provided troubleshooting support to facility staff.</p>
-                        </ul>
+                        </div>
 
                         <hr class="
                                         w-full h-0.5 mx-auto my-1 md:my-10
@@ -522,9 +518,10 @@
                         </ul>
                     </div>
                 </div>
-            </section>
+        </div>
         </div>
     </div>
+</div>
 
 
 
@@ -541,7 +538,7 @@
                             <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Simple Shopping List</h5>
                         </a>
                         <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Used event listeners, select/options and for each loop. Also added personal touch to styling.</p>
-                        <img class="h-full w-full rounded-2xl" src="/public/gifs/shopping-list.gif"/>
+                        <img class="h-full w-full rounded-2xl" src="/public/gifs/shopping-list.gif" alt="Shopping List Gif">
                     </div>
                 </div>
 
@@ -552,7 +549,7 @@
                             <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Simple Calendar</h5>
                         </a>
                         <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Functional calendar that shows current day and every day of the year.</p>
-                        <img class="h-full w-full border-2 border-slate-700 rounded-2xl" src="public/gifs/calendar.gif"/>
+                        <img class="h-full w-full border-2 border-slate-700 rounded-2xl" src="public/gifs/calendar.gif" alt="Calendar Gif">
                     </div>
                 </div>
 
@@ -563,7 +560,7 @@
                             <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Memory Game</h5>
                         </a>
                         <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Used event listeners and push to push an array into an element.</p>
-                        <img class="h-full w-full border-2 border-slate-700 rounded-2xl " src="public/gifs/memgame.gif"/>
+                        <img class="h-full w-full border-2 border-slate-700 rounded-2xl " src="public/gifs/memgame.gif" alt="Memory Game Gif">
 
                     </div>
                 </div>
@@ -571,8 +568,6 @@
             <p class="text-white text-center text-lg">These projects represent a selection of my completed work. I am currently in the process of developing a dedicated page to showcase a comprehensive collection of all the projects I have worked on.</p>
         </div>
     </section>
-
-</div>
 
 
 
@@ -589,7 +584,7 @@
                             w-full lg:w-96
                             rounded-xl shadow-2xl
                             flex-grow-0
-                            mx-auto"/>
+                            mx-auto">
 
                     <div class="flex flex-wrap flex-col items-center md:items-center pb-1">
                         <h2 class="text-white font-bold text-xl leading-tight">Andrew Spencer</h2>
@@ -652,7 +647,7 @@
             <form method="POST" action="https://formspree.io/f/xdoqbbez">
 
                 <label class="block mb-6">
-                    <span class="text-white" type="name:">Name</span>
+                    <span class="text-white">Name</span>
                     <input
                             type="text"
                             name="name"
@@ -669,7 +664,7 @@
             focus:ring-opacity-50
           "
                             placeholder="Enter your name"
-                    />
+                    >
                 </label>
                 <label class="block mb-6">
                     <span class="text-white">Email address</span>
@@ -690,7 +685,7 @@
           "
                             placeholder="Your-email@domain.com"
                             required
-                    />
+                    >
                 </label>
                 <label class="block mb-6">
                     <span class="text-white">Message</span>
@@ -768,11 +763,6 @@ Send me a message."></textarea>
     </h3>
 
 </footer>
-
-
-
-<!--test script link-->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
 
 
 
