@@ -29,6 +29,8 @@ module.exports = {
         },
     },
     plugins: [
+        require('tailwindcss'),
+        require('autoprefixer'),
         require('daisyui'),
         require('flowbite/plugin')
     ],

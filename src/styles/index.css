@@ -14,7 +14,7 @@ html {
   background: lightgray;
   box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.2);
   max-width: 500px;
-  height: auto;
+  height: 30em;
   margin: 5rem auto 5rem auto;
   border-radius: 20px;
   font-family: "Space Grotesk" ;
@@ -132,9 +132,6 @@ body {
   background:  #FBB57DFF;
 }
 
-.ootb-tabcordion--entry.is-active::before {
-}
-
 .ootb-tabcordion--entry:hover::before, .ootb-tabcordion--entry:focus::before {
   background:  #FBB57DFF;
 }
@@ -142,19 +139,16 @@ body {
 .ootb-tabcordion--tabs .tab.is-active {
 }
 
+.ootb-tabcordion--entry.is-active::before {
+}
+
 .ootb-tabcordion--tabs .tab.is-active:hover, .ootb-tabcordion--tabs .tab.is-active:focus {
   background: #FBB57DFF;
-  margin-bottom: 2em;
-  padding:20px;
 }
 
 .ootb-tabcordion--tabs .tab:hover, .ootb-tabcordion--tabs .tab:focus {
   background: #FBB57DFF;
-  margin-bottom: 2em;
-  outline: none;
-  padding:20px;
 }
-
 
 
 
@@ -171,6 +165,14 @@ p {
   font-family: "Annie Use Your Telescope";
 }
 
+.applyColoredAnimation {
+  @apply animate-text bg-clip-text text-transparent;
+  background-image: linear-gradient(to right, #FBB57DFF, white, #FBB57DFF);
+}
+
+.iDevicon {
+  font-size: 3.5rem;
+}
 
 
 /*animations*/
@@ -221,9 +223,4 @@ p {
 
 .avatarImage:hover {
   --f: 1.50;
-}
-
-.faceCard {
-  background-image: url('/projects/images/pixelbg.png');
-  opacity: 10;
 }
